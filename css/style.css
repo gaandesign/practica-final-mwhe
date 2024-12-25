@@ -1,5 +1,5 @@
 :root {
-    --color-oscuro: #40061E; 
+    --color-burdeos: #40061E; 
     --color-rosa_oscuro:#650B30;
     --color-rosa_medio:#853565;
     --color-rosa_claro:#C2819C;
@@ -26,20 +26,20 @@ section {
 }
 
 h1 {
-    padding: 3rem 0 1rem 0;
-    margin: 0;
-}
-
-h2 {
-    padding-bottom: 2rem;
-    margin: 0;
-    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 20em;
+    font-weight: 900;
+    color: var(--color-rosa_claro);
 } 
 
-h3 {
-    font-size: 6rem;
+h2 {
+    margin-bottom: 0.5em;
+    font-weight: 900;
     color: white;
-    padding-bottom: 2rem;
+} 
+
+p {
+    color: white;
 }
 
 .btn-primary {    
@@ -133,9 +133,6 @@ nav:nth-child(2) li {
     padding: 0 1rem;
 }
 
-.espacio {
-    margin: 5%;
-}
 
 .nav-logo {
     position: relative;
@@ -150,3 +147,103 @@ nav:nth-child(2) li {
     margin: 0 3rem;
 }
 
+/* INTRODUCCIÓN */
+
+.introduccion {
+    background-color: var(--color-burdeos);
+}
+
+#introduccion {
+    background-color: var(--color-burdeos);
+}
+
+/* ABOUT US  */
+
+.about_us {
+    background-color: var(--color-burdeos);
+}
+
+#about_us {
+    z-index: 1;
+    position: relative;
+    background-color: var(--color-rosa_oscuro);
+    border-radius: 100px 100px 0 0;
+}
+
+#about_us p {
+    font-size: 2em;
+    font-weight: 300;
+}
+/* BEST SELLERS  */
+
+.best_sellers {
+    background-color: var(--color-rosa_oscuro);
+}
+
+#best_sellers {
+    z-index: 1;
+    position: relative;
+    background-color: var(--color-rosa_medio);
+    border-radius: 100px 100px 0 0;
+}
+
+.card_best_sellers {
+    background-color: var(--color-burdeos);
+    border-radius: 3em;
+}
+
+/* VALUES  */
+
+.values {
+    background-color: var(--color-rosa_medio);
+}
+
+#values {
+    z-index: 1;
+    position: relative;
+    background-color: var(--color-rosa_oscuro);
+    border-radius: 100px 100px 0 0;
+}
+
+/* VALUES  */
+
+.values {
+    background-color: var(--color-rosa_medio);
+}
+
+#values {
+    z-index: 1;
+    position: relative;
+    background-color: var(--color-rosa_oscuro);
+    border-radius: 100px 100px 0 0;
+}
+
+/* PRODUCTS */
+
+.products {
+    background-color: var(--color-rosa_oscuro);
+}
+
+#products {
+    z-index: 1;
+    position: relative;
+    background-color: var(--color-burdeos);
+    border-radius: 100px 100px 0 0;
+}
+
+/* NEWS  */
+
+.news {
+    background-color: var(--color-burdeos);
+}
+
+#news {
+    z-index: 1;
+    position: relative;
+    background-color: var(--color-rosa_medio);
+    border-radius: 100px 100px 0 0;
+}
+
+footer {
+    background-color: var(--color-burdeos);
+}
