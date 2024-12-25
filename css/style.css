@@ -22,17 +22,18 @@
 }
 
 section {
-    padding: 3rem 0;
+    padding: 8rem 0;
 }
 
 h1 {
     margin-bottom: 0.5em;
-    font-size: 10em;
+    font-size: 20em;
     color: var(--color-rosa_claro);
 } 
 
 .display-1 {
     font-weight: 600;
+    font-size: 8rem;
 }
 
 h2 {
@@ -137,14 +138,33 @@ nav:nth-child(2) li {
     padding: 0 1rem;
 }
 
+#navbarNavDropdown {
+    position: relative;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    position: absolute;
+    z-index: 1;
+    margin: 5em;
+    top: 10%
+}
+
 .nav-logo {
     position: relative;
-    width: 200px;
+    width: 10em;
+    /* position: absolute; */
+    /* bottom: -5em; */
+    transform: translate(-50%);
 }
 
 #logo {
     width: 10em;
-    margin: 0 3rem;
+    position: absolute;
+    bottom: -5em;
 }
 
 nav ul {
@@ -163,6 +183,10 @@ nav li {
     font-size: 2em;
 }
 
+#carousel_inicial {
+    padding: 0;
+}
+
 /* INTRODUCCIÓN */
 
 .introduccion {
@@ -173,8 +197,23 @@ nav li {
     background-color: var(--color-burdeos);
 }
 
+#introduccion .column {
+    margin: 0 5%;
+}
+
+#introduccion > div > div {
+    position: relative;
+}
+
+#introduccion > div > div:first-child {
+    z-index: 999;
+}
+
 #introduccion img {
     width: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
 }
 
 /* ABOUT US  */
@@ -190,13 +229,14 @@ nav li {
     border-radius: 100px 100px 0 0;
 }
 
-#about_us h1 {
+#about_us h2 {
     color: var(--color-amarillo);
 }
 
 #about_us p {
-    font-size: 1em;
+    font-size: 2.5em;
     font-weight: 300;
+    margin-bottom: 2em;
 }
 
 /* BEST SELLERS  */
