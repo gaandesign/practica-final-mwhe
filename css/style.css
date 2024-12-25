@@ -1,0 +1,152 @@
+:root {
+    --color-oscuro: #40061E; 
+    --color-rosa_oscuro:#650B30;
+    --color-rosa_medio:#853565;
+    --color-rosa_claro:#C2819C;
+    --color-naranja: #E48447;
+    --color-amarillo:#F7D59A;
+}
+
+/* @font-face {
+    font-family: "KGHAPPYSolid";
+    src: url(../fonts/KGHAPPYSolid.ttf) format('truetype');
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", serif;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+h1 {
+    padding: 3rem 0 1rem 0;
+    margin: 0;
+}
+
+h2 {
+    padding-bottom: 2rem;
+    margin: 0;
+    font-weight: bold;
+} 
+
+h3 {
+    font-size: 6rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.btn-primary {    
+    color: black;
+    border: black 0.2rem solid;
+    border-radius: 4rem;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* .btn-primary:hover {
+} */
+
+.btn-custom {
+    background-color: var(--color-naranja);
+    color: black;
+    border: black 0.2rem solid;
+    border-radius: 4rem;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* .btn-custom:hover {
+	background-color: #0d6efd;
+    border: #0d6efd 0.2rem solid;
+    color: white;
+} */
+
+/* .btn-custom p:hover {
+	color: white;
+} */
+
+/* POP UP */
+
+#cookie-popup {
+	display: none;
+}
+
+#cookie-popup h2 {
+    padding: 0;
+}
+
+#cookie-popup > div {
+	z-index: 999;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-rosa_oscuro);
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;    
+	align-items: center;   
+    width: 70%;
+}
+
+
+#cookie-popup p {
+    font-size: 2rem;
+	color: black;
+	padding: 2%;
+}
+
+
+#cookie-popup .btn-primary {
+    padding: 1rem 2rem;
+    font-size: 1.75rem;
+}
+
+#accept-cookies > .btn-primary > p {
+	color: black;
+}
+
+/* MENÚ PRINCIPAL */
+
+nav:nth-child(2) {
+    padding: 2rem;
+}
+
+.bg-body-tertiary {
+    background-color: white !important;
+}
+
+
+nav:nth-child(2) li {
+    padding: 0 1rem;
+}
+
+.espacio {
+    margin: 5%;
+}
+
+.nav-logo {
+    position: relative;
+    width: 200px;
+}
+
+#logo {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 0;
+    margin: 0 3rem;
+}
+
