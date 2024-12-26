@@ -1,3 +1,4 @@
+/* COLORES */
 :root {
     --color-burdeos: #40061E; 
     --color-rosa_oscuro:#650B30;
@@ -9,13 +10,8 @@
     --color-negro:black;
     --color-negro_traslucido:rgba(0, 0, 0, 0.2);
 }
-
-/* @font-face {
-    font-family: "KGHAPPYSolid";
-    src: url(../fonts/KGHAPPYSolid.ttf) format('truetype');
-} */
-
-
+/*____________________ */
+/* FORMATO GENERAL */
 *{
     padding: 0;
     margin: 0;
@@ -25,14 +21,21 @@
     /* PARA VER MARGENES DE LA WEB USAR EL BORDER ESTE(BORRAR AL TERMINAR) */
     border: 1px solid magenta;
 }
-/* _________________________ */
-/* TEXTO (YO USARIA ESTO QUE ES MÁS FÁCIL LO DEJO COMENTADO Y SI OS PAERECE BIEN LO USAMOS)*/
+section {
+    padding: 8rem 0;
+}
+#about_us, #best_sellers,#values, #news { 
+    border-radius: 100px 100px 0 0;
+
+}
+/*____________________ */
+/* TEXTOS*/
 .fs-1 {
-    font-size: 6rem !important;
+    font-size: 17rem !important;
 }
 
 .fs-2 {
-    font-size: 5rem !important;
+    font-size: 8rem !important;
 }
 
 .fs-3 {
@@ -47,34 +50,28 @@
     font-size: 2rem !important;
 }
 
-p, a {
+p,a {
+    font-size: 2.5rem;
+    font-weight: 300;
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: var( --color-blanco);
 }
-/*____________________ */
-section {
-    padding: 8rem 0;
+.texto_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-h1 {
-    margin-bottom: 0.5em;
-    font-size: 20em;
-    color: var(--color-rosa_claro);
-} 
 
 .display-1 {
     font-weight: 600;
-    font-size: 8rem;
 }
 
 h2 {
-    margin-bottom: 0.5em;
     font-weight: 900;
-    color: var( --color-blanco);
 } 
-
+/*____________________ */
+/* BOTONES */
 .btn-primary {
     background-color: var(--color-naranja);  
     color: var( --color-blanco); 
@@ -153,7 +150,6 @@ h2 {
 }
 /*____________________ */
 /* MENÚ PRINCIPAL */
-
 nav:nth-child(2) {
     padding: 2rem;
 }
@@ -215,59 +211,42 @@ nav li {
 #carousel_inicial {
     padding: 0;
 }
-
+/*____________________ */
 /* INTRODUCCIÓN */
-
-.introduccion {
+ #introduccion, .introduccion-fluid {
     background-color: var(--color-burdeos);
 }
-
-#introduccion {
-    background-color: var(--color-burdeos);
+.intro-text {
+    color: var(--color-rosa_claro);
 }
-
-#introduccion .column {
-    margin: 0 5%;
-}
-
-#introduccion > div > div {
-    position: relative;
-}
-
-#introduccion > div > div:first-child {
-    z-index: 999;
-}
-
-#introduccion img {
-    width: 100%;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-}
-
+/* ____________ */
 /* ABOUT US  */
-
+#about_us {
+    background-color: var(--color-rosa_oscuro);
+}
 .about_us {
     background-color: var(--color-burdeos);
-}
-
-#about_us {
-    z-index: 1;
-    position: relative;
-    background-color: var(--color-rosa_oscuro);
-    border-radius: 100px 100px 0 0;
 }
 
 #about_us h2 {
     color: var(--color-amarillo);
 }
-
-#about_us p {
-    font-size: 2.5em;
-    font-weight: 300;
-    margin-bottom: 2em;
+.video {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    width: 100%; 
+    margin: 0 auto;
 }
 
+.video > iframe {
+    width: 70%;
+    height: 70vh;
+    aspect-ratio: 16 / 9;
+    border-radius: 3em;
+    border: none; 
+}
+/* ____________ */
 /* BEST SELLERS  */
 
 .best_sellers {
@@ -275,10 +254,7 @@ nav li {
 }
 
 #best_sellers {
-    z-index: 1;
-    position: relative;
     background-color: var(--color-rosa_medio);
-    border-radius: 100px 100px 0 0;
 }
 
 .card_best_sellers {
@@ -291,9 +267,7 @@ nav li {
 .card_best_sellers img {
     width: 100%;
 }
-
-
-
+/* ____________ */
 /* VALUES  */
 
 .values {
@@ -317,8 +291,6 @@ figcaption {
     font-size: 3em;
 }
 
-/* VALUES  */
-
 .values {
     background-color: var(--color-rosa_medio);
 }
@@ -329,7 +301,7 @@ figcaption {
     background-color: var(--color-rosa_oscuro);
     border-radius: 100px 100px 0 0;
 }
-
+/* ____________ */
 /* PRODUCTS */
 
 .products {
@@ -342,7 +314,7 @@ figcaption {
     background-color: var(--color-burdeos);
     border-radius: 100px 100px 0 0;
 }
-
+/* ____________ */
 /* NEWS  */
 
 .news {
@@ -368,7 +340,44 @@ figcaption {
 #news p {
     color: var(--color-burdeos);
 }
-
+/* ____________ */
+/* FOOTER */
 footer {
-    background-color: var(--color-burdeos);
+    background-color: var(--color-burdeos);  
+    color: var(--color-blanco);
+    padding: 1.5rem;
+}
+
+footer h3, footer p {
+    margin-top: 1.5rem;
+}
+
+footer a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    display: block;
+}
+
+footer a, footer p {
+    margin: 0.5rem;
+}
+
+.footer-container > div {
+    margin-right: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icons > ul > li {
+    display: inline;
+}
+
+footer a:hover,.social-icons:hover {
+    color: var(--color-rosa_claro); 
 }

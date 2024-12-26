@@ -90,7 +90,7 @@
               </li>
               <!-- LOGO  -->
               <li class="nav-item nav-logo">
-                <a class=" nav-link d-none d-xl-flex justify-content-center" id="logo" href="#"><img src="media/img/haeagen-dazs-logo_menu.svg" alt="Häagen-Dazs"></a>
+                <a class=" nav-link d-none d-xl-flex justify-content-center" id="logo" href="#"><img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs"></a>
               </li>
 
               <li class="nav-item">
@@ -105,10 +105,8 @@
           </div>
         </div>
       </nav>
-
-
     </header>
-
+    
     <main>
 
       <!-- CARRUSEL INICIAL -->
@@ -136,56 +134,45 @@
       
 
       <!-- INTRODUCCIÓN -->
-      <div class="introduccion">
-
-        <section id="introduccion">
-
-          <div class="container column">
-
-            <div class="col-12" data-scroll-section>
-              <h1><b>Thät’s Dazs</b></h1>
+      <section id="introduccion">
+        <div class="introduccion-container-fluid px-5" style="width: 90%; margin: 0 auto;"> 
+          <div class="row align-items-center">       
+            <!-- TEXTO -->
+            <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+              <h2 class="fs-1 intro-text mb-2" style="word-wrap: break-word;">
+                Thät´s <br> Dazs
+              </h2>
             </div>
-
-            <div class="col-12">
-              <figure>
-                <img src="media/img/helados_introduccion.png">
-              </figure>
+            <!-- IMAGEN -->
+            <div class="col-md-6 col-sm-12 text-center" style="padding-top: 80px;">
+              <img src="media/img/helados_introduccion.png" class="img-fluid mb-4" alt="Tarrinas de helados">
             </div>
-            
           </div>
+        </div>
+      </section>
 
-        </section>
-
-      </div>
-      
       <!-- ABOUT US -->
       <div class="about_us">
-
         <section id="about_us">
-
-          <div class="container-fluid d-flex flex-column align-items-center">
-            
-            <h2 class="display-1"><b>ABOUT US</b></h2>
-            
-            <p class="col-10">Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
-
-            <div class="row justify-content-center video-container">
-                <div class="col-12">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VH_qr8lB92w?si=ikQ95rTW4ovgdlp9&autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="about_us-container-fluid d-flex flex-column align-items-center">
+            <h2 class="fs-2 mb-5 display-1 text-center"><b>ABOUT US</b></h2>
+            <!-- TEXTO -->
+            <div class="texto_about mb-5" style="width: 70%">
+              <p>Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
             </div>
-
+            <!-- VIDEO -->
+            <div class="video d-flex align-items-center mb-5">
+              <iframe src="https://www.youtube.com/embed/VH_qr8lB92w?si=ikQ95rTW4ovgdlp9&autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
           </div>
-
         </section>
-
       </div>
 
       <!-- BEST SELLERS -->
-
       <div class="best_sellers">
         <section id="best_sellers">
-          <div class="container-fluid d-flex flex-column align-items-center">
-            <h2 class="display-1 text-center"><b>BEST SELLERS</b></h2>
+          <div class="best_sellers-container-fluid d-flex flex-column align-items-center">
+            <h2 class="fs-2 mb-5 display-1 text-center"><b>BEST SELLERS</b></h2>
 
             <div class="container row">
 
@@ -215,7 +202,7 @@
       <div class="values">
 
         <section id="values">
-          <div class="container-fluid d-flex flex-column align-items-center">
+          <div class="values-container-fluid d-flex flex-column align-items-center">
             
             <h2 class="display-1 text-center"><b>VALUES</b></h2>
 
@@ -262,7 +249,7 @@
       <div class="products">
         <section id="products">
 
-          <div class="container-fluid">
+          <div class="products-container-fluid">
             
             <h2 class="display-1 text-center"><b>PRODUCTS</b></h2>
 
@@ -275,7 +262,7 @@
       <div class="news">
         <section id="news">
 
-          <div class="container-fluid">
+          <div class="news-container-fluid">
             
             <h2 class="display-1 text-center"><b>NEWS</b></h2>
   
@@ -342,18 +329,18 @@
      <!-- FOOTER -->
      <footer>
       <div class="footer-container">
+          
           <div class="row text-center">
               <div class="col-md-4">
                   <div class="footer_text fs-5">
-                  <a href="#about_us">ABOUT US</a>
-                  <a href="#best_sellers">BEST SELLERS</a>
-                  <a href="#values">VALUES</a>
-                  <a href="#products">PRODUCTS</a>
-                  <a href="#news">NEWS</a>
+                  <a href="#about_us"><b>ABOUT US</b></a>
+                  <a href="#best_sellers"><b>BEST SELLERS</b></a>
+                  <a href="#values"><b>VALUES</b></a>
+                  <a href="#products"><b>PRODUCTS</b></a>
+                  <a href="#news"><b>NEWS</b></a>
                  </div>
               </div>
               <div class="col-md-4">
-                  <h3 class="fs-4">CONTACT</h3>
                   <div class="footer_text fs-5">
                     <p>General Mills Ibérica, S.A.U.</p>
                     <p>Avda de Burgos, 19, 4ªplanta
@@ -361,8 +348,7 @@
                   </div>  
               </div>
               <div class="col-md-4">
-                  <h3 class="fs-4">REDES SOCIALES</h3>
-                  <div class="social-icons fa-3x ">
+                  <div class="social-icons fa-3x">
                       <ul class="d-flex">
                           <li><a href="https://www.instagram.com/haagendazs_es/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
                           <li><a href="https://www.facebook.com/haagendazstt/"><i class="fa-brands fa-facebook"></i></a></li>
