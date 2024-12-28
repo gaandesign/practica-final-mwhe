@@ -23,14 +23,12 @@
     border: 1px solid magenta;
 }
 
-section {
+.best_sellers, .values, .news { 
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
     padding: 5%;
 }
 
-#about_us, #best_sellers,#values, #news { 
-    border-radius: 100px 100px 0 0;
-
-}
 /*____________________ */
 /* TEXTOS*/
 .fs-1 {
@@ -303,6 +301,10 @@ nav li {
     background-color: var(--color-burdeos);
 }
 
+.introduccion-container-fluid {
+    padding: 5%;
+}
+
 .intro-text {
     color: var(--color-rosa_claro);
 }
@@ -315,10 +317,13 @@ nav li {
 /* ____________ */
 /* ABOUT US  */
 #about_us {
-    background-color: var(--color-rosa_oscuro);
-}
-.about_us {
     background-color: var(--color-burdeos);
+}
+
+.about_us {
+    background-color: var(--color-rosa_oscuro);
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
 }
 
 #about_us h2 {
@@ -333,15 +338,16 @@ nav li {
 }
 
 .video > iframe {
-    width: 70%;
+    width: 80%;
     height: 70vh;
     aspect-ratio: 16 / 9;
     border-radius: 3em;
     border: none; 
 }
+
+
 /* ____________ */
 /* BEST SELLERS  */
-
 .best_sellers {
     background-color: var(--color-rosa_oscuro);
 }
@@ -360,9 +366,10 @@ nav li {
 .card_best_sellers img {
     width: 100%;
 }
+
+
 /* ____________ */
 /* VALUES  */
-
 .values {
     background-color: var(--color-rosa_medio);
 }
