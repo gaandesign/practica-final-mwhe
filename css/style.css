@@ -10,6 +10,7 @@
     --color-negro:black;
     --color-negro_traslucido:rgba(0, 0, 0, 0.2);
 }
+
 /*____________________ */
 /* FORMATO GENERAL */
 *{
@@ -21,8 +22,9 @@
     /* PARA VER MARGENES DE LA WEB USAR EL BORDER ESTE(BORRAR AL TERMINAR) */
     border: 1px solid magenta;
 }
+
 section {
-    padding: 8rem 0;
+    padding: 5%;
 }
 
 #about_us, #best_sellers,#values, #news { 
@@ -295,25 +297,21 @@ nav li {
 } */
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*____________________ */
 /* INTRODUCCIÓN */
- #introduccion, .introduccion-fluid {
+#introduccion, .introduccion-fluid {
     background-color: var(--color-burdeos);
 }
+
 .intro-text {
     color: var(--color-rosa_claro);
 }
+
+.thatsdazs > img {
+    width: 100%;
+}
+
+
 /* ____________ */
 /* ABOUT US  */
 #about_us {
