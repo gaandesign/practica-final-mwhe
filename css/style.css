@@ -24,6 +24,7 @@
 section {
     padding: 8rem 0;
 }
+
 #about_us, #best_sellers,#values, #news { 
     border-radius: 100px 100px 0 0;
 
@@ -70,12 +71,14 @@ p,a {
 h2 {
     font-weight: 900;
 } 
+
 /*____________________ */
 /* BOTONES */
 .btn-primary {
     background-color: var(--color-naranja);  
     color: var( --color-blanco); 
     border: none;
+    padding: 0.5em;
     border-radius: 4rem;
     font-weight: 600;
     font-size: 1em;
@@ -85,14 +88,21 @@ h2 {
 /* .btn-primary:hover {
 } */
 
-.btn-custom {
+.btn-custom, .btn-explore {
     background-color: var(--color-burdeos);
     color: var(--color-blanco);
     border: none;
     border-radius: 4rem;
     font-weight: 600;
     font-size: 1em;
-    width: 60%;
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.btn-explore:hover {
+    background-color: var(--color-rosa_claro);
+    transition: 1s;
 }
 
 /* .btn-custom:hover {
@@ -148,8 +158,84 @@ h2 {
 #accept-cookies > .btn-primary > p {
 	color: var(--color-negro);
 }
+
 /*____________________ */
-/* MENÚ PRINCIPAL */
+/* HEADER */
+/* CAROUSEL IMAGENES */
+.carousel_inicial {
+    background-color: #40061E;
+}
+
+.carousel-item > img {
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+}
+
+.btn_explore {
+    padding-bottom: 15rem;
+}
+
+/* MENU HAMBURGUESA */
+.navbar {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #40061E !important;
+    border-radius: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 6rem;
+}
+
+#navbarResponsive {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    align-content: center !important;
+    height: 6rem;
+}
+
+.navbar-nav {
+    height: 6rem;
+    margin: 0 !important;
+    display: flex;
+    align-content: center !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item > a {
+    color: white;
+}
+
+.nav-item-logo {
+    background-color: aqua;
+    height: 7rem;
+}
+
+.nav-item-logo > a > img {
+    height: 7rem;
+}
+
+.nav-link {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin: 0;
+    width: 100%;
+}
+
+/* 
 nav:nth-child(2) {
     padding: 2rem;
 }
@@ -183,9 +269,9 @@ nav:nth-child(2) li {
     width: 10em;
     /* position: absolute; */
     /* bottom: -5em; */
-    transform: translate(-50%);
-}
-
+    /* transform: translate(-50%);
+} */
+/* 
 #logo {
     width: 10em;
     position: absolute;
@@ -206,11 +292,20 @@ nav li {
 .nav-link {
     color: var(--color-blanco);
     font-size: 2em;
-}
+} */
 
-#carousel_inicial {
-    padding: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 /*____________________ */
 /* INTRODUCCIÓN */
  #introduccion, .introduccion-fluid {
