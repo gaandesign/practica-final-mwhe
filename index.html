@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Codificación de la web -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+  <!-- Título de la web -->
   <title>Häagen-Dazs</title>
-  <meta name="description" content="Häagen-Dazs ES">
-  <meta name="author" content="Miriam Brillaxis González-Amézqueta, Marina Garrido Andrés y Rosa Terrés Morata">    
 
-  <!-- RESPONSIVE -->
+  <!-- Descrición de la web -->
+  <meta name="description" content="Häagen-Dazs">
+
+  <!-- Autor -->
+  <meta name="autor" content="Miriam Brillaxis González-Amézqueta, Marina Garrido Andrés y Rosa Terrés Morata">
+
+  <!-- Diseño responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FAVICON Y FONTAWESOME -->
-  <link rel="icon" type="image/svg" sizes="32x32" href="media/favicon/haagen-dazs-logo.svg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="media/favicon/haagen-dazs-logo.svg">
+
+  <!-- TYPEKIT LO TENEMOS ABAJO TAMBIÉN -->
+  <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <!-- LIGHTBOX CSS -->
+  <link href="css/lightbox.css" rel="stylesheet">
+     
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- TYPO JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- SCROLL REVEAL JS -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-  <!-- CSS DE BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- CSS PROPIO -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="css/style.css">
-                
-  <!-- LIBRERÍA DE AOS  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- CSS de AOS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"/>
-
-  <!-- LOCOMOTIVE SCROLL CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-
 
 <body>
   
@@ -213,7 +224,7 @@
                       <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">EXPLORE</a>
                   </div>
 
-                  <div class="modal fade" id="dulcedelecheModal" tabindex="-1" aria-labelledby="dulcedelecheModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="dulcedelecheModal" tabindex="-1" aria-labelledby="dulcedelecheModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-text">
@@ -245,7 +256,7 @@
                       <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#saltedcaramelModal" role="button">EXPLORE</a>
                   </div>
 
-                  <div class="modal fade" id="saltedcaramelModal" tabindex="-1" aria-labelledby="saltedcaramelModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="saltedcaramelModal" tabindex="-1" aria-labelledby="saltedcaramelModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-text">
@@ -276,7 +287,7 @@
                       <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#belgianchocolateModal" role="button">EXPLORE</a>
                   </div>
 
-                  <div class="modal fade" id="belgianchocolateModal" tabindex="-1" aria-labelledby="belgianchocolateModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="belgianchocolateModal" tabindex="-1" aria-labelledby="belgianchocolateModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-text">
@@ -298,99 +309,103 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-          <div class="best_sellers-container-fluid d-flex flex-column align-items-center">
-            
-            <div class="container row">
-              <div class="card_best_sellers col-4 d-flex flex-column justify-content-center align-items-center">
-                <img src="media/img/PEANUT_BUTTER_CRUNCH.jpg" alt="PEANUT_BUTTER_CRUNCH">
-                <button class="btn-primary d-flex align-items-center justify-content-center p-1">EXPLORE</p>
-              </div>
-
-              <div class="card_best_sellers col-4 d-flex flex-column justify-content-center align-items-center">
-                <img src="media/img/PEANUT_BUTTER_CRUNCH.jpg" alt="PEANUT_BUTTER_CRUNCH">
-                <button class="btn-primary d-flex align-items-center justify-content-center p-1">EXPLORE</p>
-              </div>
-
-              <div class="card_best_sellers col-4 d-flex flex-column justify-content-center align-items-center">
-                <img src="media/img/PEANUT_BUTTER_CRUNCH.jpg" alt="PEANUT_BUTTER_CRUNCH">
-                <button class="btn-primary d-flex align-items-center justify-content-center p-1">EXPLORE</p>
-              </div>
-
-            </div>
-
-          </div> -->
-
       
       
       <!-- VALUES -->
-      <div class="values">
+      <section id="values">
+        <div class="values">
+          <h2 class="fs-2 mb-5 display-1 text-center"><b>VALUES</b></h2>
+          <div class="container-fluid text-center px-5" style="width: 85%;">
+            <div class="container_bestsellers text-center">
+              <div class="row align-items-start">
+                <!-- QUALITY -->
+                <div class="quality col-12 col-md-4">
+                  <div id="quality" class="d-flex flex-column align-items-center text-center position-relative">
+                    <img src="media/img/VALUES/VALUES-01.png" 
+                         class="img-fluid" 
+                         alt="quality" 
+                         style="cursor: pointer;" 
+                         data-bs-toggle="modal" 
+                         data-bs-target="#qualityModal">
+                    <h2 class="position-absolute top-50 start-50 translate-middle  fs-4">
+                    QUALITY
+                    </h2>
+                  </div>
+                
+                  <!-- MODAL -->
+                  <div class="modal fade" id="qualityModal" tabindex="-1" aria-labelledby="qualityModalLabel" >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p>CAt Häagen-Dazs, QUALITY is not just a word—it’s the heart of everything we do. From the moment we source our ingredients to the final scoop in your bowl, we uphold the highest standards to ensure every bite is a moment of indulgence. We use only the finest, all-natural ingredients, including pure cream, fresh milk, and carefully selected flavors like Madagascar vanilla and Belgian chocolate. Each step in our production process is meticulously controlled to preserve the richness, texture, and taste that have defined our brand for decades. When you choose Häagen-Dazs, you’re choosing a product crafted with care and dedication, because we believe that exceptional QUALITY is the foundation of extraordinary taste.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <section id="values">
-          <div class="values-container-fluid d-flex flex-column align-items-center">
-            
-            <h2 class="display-1 text-center"><b>VALUES</b></h2>
+                <!-- SUSTAINABILITY -->
+                <div class="sustainablity col-12 col-md-4">
+                  <div id="sustainablity" class="d-flex flex-column align-items-center text-center position-relative">
+                    <img src="media/img/VALUES/VALUES-02.png" 
+                         class="img-fluid" 
+                         alt="sustainablity" 
+                         style="cursor: pointer;" 
+                         data-bs-toggle="modal" 
+                         data-bs-target="#sustainablityModal">
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4">
+                    SUSTAINABILITY
+                    </h2>
+                  </div>
+                
+                  <!-- MODAL -->
+                  <div class="modal fade" id="sustainablityModal" tabindex="-1" aria-labelledby="sustainablityModalLabel">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p>At Häagen-Dazs, we recognize our responsibility to care for the planet we all share. That’s why SUSTAINABILITY is at the core of our operations. From sourcing ingredients responsibly to adopting eco-friendly packaging solutions, we are committed to minimizing our environmental impact. Our dairy suppliers adhere to sustainable farming practices that prioritize animal welfare and reduce carbon footprints. Additionally, we work to ensure that every step of our supply chain contributes to a healthier planet, including our efforts to reduce water and energy consumption. SUSTAINABILITY isn’t just about preserving resources—it’s about leaving a legacy of environmental stewardship for generations to come. Together, we can savor our favorite flavors while protecting the world around us.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="container row">
-
-              <div class="col-4 d-flex flex-column align-items-center justify-content-center">
-
-                <figure>
-                  <img src="media/img/values_1.png" alt="quality">
-                </figure>
-
-                <figcaption>QUALITY</figcaption>
-
+                <!-- CREATIVITY -->
+                <div class="creativity col-12 col-md-4">
+                  <div id="creativity" class="d-flex flex-column align-items-center text-center position-relative">
+                    <img src="media/img/VALUES/VALUES-03.png" 
+                         class="img-fluid" 
+                         alt="creativity" 
+                         style="cursor: pointer;" 
+                         data-bs-toggle="modal" 
+                         data-bs-target="#creativityModal">
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4">
+                      CREATIVITY
+                    </h2>
+                  </div>
+                
+                  <!-- MODAL -->
+                  <div class="modal fade" id="creativityModal" tabindex="-1" aria-labelledby="creativityModalLabel">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p>Häagen-Dazs isn’t just about ice cream—it’s about pushing the boundaries of what’s possible in flavor and design. CREATIVITY is at the heart of every product we develop, from innovative flavors like Salted Caramel and Matcha Green Tea to limited-edition collaborations that surprise and delight our customers. We believe that ice cream is a canvas for artistic expression, and we strive to bring that artistry to life in every pint and scoop. Beyond flavors, we’re constantly reimagining how we connect with our customers, from unique packaging designs to inspiring advertising campaigns. Our goal is to inspire joy and spark imagination, ensuring that every experience with Häagen-Dazs feels extraordinary. CREATIVITY is what keeps us innovating and evolving to surprise our customers time and time again.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div class="col-4 d-flex flex-column align-items-center justify-content-center">
-
-                <figure>
-                  <img src="media/img/values_1.png" alt="quality">
-                </figure>
-
-                <figcaption>QUALITY</figcaption>
-
-              </div>
-
-              <div class="col-4 d-flex flex-column align-items-center justify-content-center">
-
-                <figure>
-                  <img src="media/img/values_1.png" alt="quality">
-                </figure>
-
-                <figcaption>QUALITY</figcaption>
-
-              </div>
-
             </div>
-
           </div>
+        </div>
+      </section>
       
-        </section>
-      </div>
 
       <!-- PRODUCTS -->
       <div class="products">
@@ -511,8 +526,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 
 
-    <!-- JAVASCRIPT DE BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- JAVASCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-XopO4E0qeKeK0xZRroHAlXJxED82InYcs5QJvArZ+lC3oU6zZBpi3MxE0Q95t9f3" crossorigin="anonymous"></script>
 
     <!-- LOCOMOTIVE SCROLL JS -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
