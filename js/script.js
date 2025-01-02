@@ -32,13 +32,15 @@ $(document).ready(function(){
     $("#reject-cookies").click(function() {
         $("#cookie-popup").fadeOut();
     });
+
+
 });
 
 // MODAL WINDOW
-document.addEventListener('DOMContentLoaded', function () {
-    var modals = document.querySelectorAll('.modal');
-    if (modals.length > 0) {
-      console.log('Bootstrap modals initialized.');
-    }
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     var modals = document.querySelectorAll('.modal');
+//     if (modals.length > 0) {
+//       console.log('Bootstrap modals initialized.');
+//     }
+// });
 

@@ -24,8 +24,8 @@
 }
 
 .best_sellers, .values, .news { 
-    border-top-left-radius: 6rem;
-    border-top-right-radius: 6rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
     padding: 5%;
 }
 
@@ -73,6 +73,7 @@ h2 {
 } 
 
 /*____________________ */
+
 /* BOTONES */
 .btn-primary {
     background-color: var(--color-naranja);  
@@ -156,9 +157,10 @@ h2 {
 
 
 /*____________________ */
+
 /* HEADER */
 /* CAROUSEL IMAGES */
-.carousel_inicial {
+#carousel_inicial {
     background-color: #40061E;
 }
 
@@ -326,6 +328,7 @@ nav li {
 #about_us h2 {
     color: var(--color-amarillo);
 }
+
 .video {
     display: flex;
     flex-direction: column !important;
@@ -336,9 +339,9 @@ nav li {
 
 .video > iframe {
     width: 80%;
-    height: 70vh;
+    height: auto;
     aspect-ratio: 16 / 9;
-    border-radius: 6em;
+    border-radius: 4rem;
     border: none; 
 }
 
@@ -357,7 +360,12 @@ nav li {
     color: var(--color-rosa_claro);
 }
 
-/* CRAD */
+/* CARD */
+
+.best_sellers > .container-fluid {
+    width: 85%;
+}
+
 .container_bestsellers {
     padding: 0;
 }
@@ -379,7 +387,7 @@ nav li {
 
 #dulcedeleche, #saltedcaramel, #belgianchocolate {
     background-color: var(--color-burdeos);
-    border-radius: 6rem;
+    border-radius: 4rem;
 }
 
 #dulcedeleche > img, #saltedcaramel > img, #belgianchocolate > img {
@@ -394,7 +402,7 @@ nav li {
 
 #dulcedeleche > a:hover, #saltedcaramel > a:hover, #belgianchocolate > a:hover {
     background-color: var(--color-rosa_medio);
-    transition: 1S;
+    transition: 1s;
 }
 
 /* MODAL */
@@ -403,7 +411,9 @@ nav li {
     width: 100%;
     margin: 0;
     background-color: var(--color-naranja); 
+	opacity: 0;
 }
+
 
 .modal-dialog {
     height: 100vh; 
@@ -465,21 +475,21 @@ nav li {
 }
 
 #quality > img, #sustainablity > img, #creativity > img {
-    border-radius: 6rem;
+    border-radius: 4rem;
     width: 100%;
     height: 100%; 
     object-fit: cover; 
 }
 
 #quality > h2, #sustainablity > h2, #creativity > h2 {
-    text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8) !important;
+    text-shadow: 6px 4px 16px rgba(0, 0, 0, 0.8) !important;
     margin: 0;
     color: rgb(254, 245, 231);
 }
 
 /* MODAL */
 .quality > div:last-child {
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -522,8 +532,9 @@ nav li {
 
 /* ____________ */
 /* NEWS  */
+
 .news {
-    background-color: var(--color-burdeos);
+    background-color: var(--color-rosa_medio);
 }
 
 #news {
@@ -533,20 +544,53 @@ nav li {
     border-radius: 100px 100px 0 0;
 }
 
+#news h2 {
+    color: var(--color-rosa_claro);
+}
+
 #news .card {
     background-color: var(--color-naranja);
     padding: 0;
     border: none;
+    border-radius: 4rem;
+    width: 30%;
 }
-#news h5 {
+
+#news .card img {
+    border-radius: 4rem 4rem 0 0;
+}
+
+#news h1 {
+    font-weight: 500;
     color: var(--color-burdeos); 
 }
 
 #news p {
     color: var(--color-burdeos);
 }
+
+#news .btn-custom {
+    width: auto;
+}
+
+/* ____________ */
+/* WAVY */
+
+#wavy {
+    background-color: var(--color-rosa_medio);
+}
+
+#wavy figure {
+    margin: 0;
+}
+
+#wavy img {
+    width: 100%;
+}
+
 /* ____________ */
 /* FOOTER */
+
 footer {
     background-color: var(--color-burdeos);  
     color: var(--color-blanco);
@@ -585,4 +629,18 @@ footer a, footer p {
 
 footer a:hover,.social-icons:hover {
     color: var(--color-rosa_claro); 
+}
+
+@media screen and (max-width: 1600px) {
+
+    /* CARD */
+
+    .best_sellers > .container-fluid {
+        width: 100%;
+    }
+
+    .values > .container-fluid {
+        width: 100%;
+    }
+
 }
