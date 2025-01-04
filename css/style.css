@@ -6,9 +6,6 @@
     --color-rosa_claro:#C2819C;
     --color-naranja: #E48447;
     --color-amarillo:#F7D59A;
-    --color-blanco:white; 
-    --color-negro:black;
-    --color-negro_traslucido:rgba(0, 0, 0, 0.2);
 }
 
 /*____________________ */
@@ -51,12 +48,12 @@
     font-size: 2rem !important;
 }
 
-p,a {
+p, a {
     font-size: 2.5rem;
     font-weight: 300;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: var( --color-blanco);
+    color: white;
 }
 .texto_about {
     display: flex;
@@ -75,48 +72,36 @@ h2 {
 /*____________________ */
 
 /* BOTONES */
-.btn-primary {
-    background-color: var(--color-naranja);  
-    color: var( --color-blanco); 
+
+.btn-primary, .btn-custom, .btn-explore {
     border: none;
-    padding: 0.5em;
     border-radius: 4rem;
     font-weight: 600;
     font-size: 1em;
     width: 100%;
 }
 
-.btn-primary:hover {
-    background-color: var(--color-rosa_claro);
-    transition: 0.5s;
+.btn-primary {
+    background-color: var(--color-naranja);  
+    color: white; 
+    padding: 0.5em;
 }
+
 
 .btn-custom, .btn-explore {
     background-color: var(--color-burdeos);
-    color: var(--color-blanco);
-    border: none;
-    border-radius: 4rem;
-    font-weight: 600;
-    font-size: 1em;
-    width: 100%;
+    color: white;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
 
-.btn-explore:hover {
+
+.btn-primary:hover, .btn-custom:hover, .btn-explore:hover {
     background-color: var(--color-rosa_claro);
     transition: 0.5s;
 }
 
-/* .btn-custom:hover {
-	background-color: #0d6efd;
-    border: #0d6efd 0.2rem solid;
-    color: white;
-} */
 
-/* .btn-custom p:hover {
-	color: white;
-} */
 
 /*____________________ */
 /* POP UP */
@@ -135,17 +120,10 @@ h2 {
     width: 60%;
 }
 
-#cookie-popup h2 {
+#cookie-popup h2, #cookie-popup p {
 	color: white;
 }
 
-#cookie-popup p {
-	color: white;
-}
-
-#cookie-popup .btn-primary {
-    padding: 1rem 2rem;
-}
 
 .aceptar button, .rechazar button {
     background-color: var(--color-naranja);
@@ -215,7 +193,7 @@ h2 {
 }
 
 .nav-item > a {
-    color: var(--color-blanco);
+    color: white;
 }
 
 .nav-item-logo {
@@ -355,7 +333,7 @@ nav li {
     background-color: var(--color-rosa_medio);
 }
 
-.best_sellers > h2 {
+.best_sellers > h2, #dulcedeleche > a, #saltedcaramel > a, #belgianchocolate > a {
     color: var(--color-rosa_claro);
 }
 
@@ -366,9 +344,6 @@ nav li {
     border-radius: 4rem;
 }
 
-#dulcedeleche > a, #saltedcaramel > a, #belgianchocolate > a {
-    background-color: var(--color-rosa_claro);
-}
 
 #dulcedeleche > a:hover, #saltedcaramel > a:hover, #belgianchocolate > a:hover {
     background-color: var(--color-rosa_medio);
@@ -406,7 +381,6 @@ nav li {
 .modal-text {
     padding-right: 25rem;
 }
-
 
 
 /* ____________ */
@@ -480,7 +454,7 @@ nav li {
 
 /* ____________ */
 /* NEWS  */
-#news {
+#news, #news h1, #news p {
     background-color: var(--color-burdeos);
 }
 
@@ -504,13 +478,9 @@ nav li {
 }
 
 #news h1 {
-    color: var(--color-burdeos); 
     font-weight: 500;
 }
 
-#news p {
-    color: var(--color-burdeos);
-}
 
 
 /* ____________ */
@@ -529,7 +499,7 @@ footer {
 }
 
 footer, footer a {
-    color: var(--color-blanco);
+    color: white;
 }
 
 
@@ -541,11 +511,7 @@ footer a:hover,.social-icons:hover {
 
     /* CARD */
 
-    .best_sellers > .container-fluid {
-        width: 100%;
-    }
-
-    .values > .container-fluid {
+    .best_sellers > .container-fluid , .values > .container-fluid {
         width: 100%;
     }
 
