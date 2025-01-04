@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <!-- Codificación de la web -->
+  
+  <!-- CODIFICACIÓN DE LA WEB -->
   <meta charset="UTF-8">
     
-  <!-- Título de la web -->
-  <title>Häagen-Dazs</title>
+  <!-- TÍTULO DE LA WEB -->
+  <title>Luxury Icen Cream | Häagen-Dazs ES</title>
 
-  <!-- Descrición de la web -->
-  <meta name="description" content="Häagen-Dazs">
+  <!-- DESCRIPCIÓN DE LA WEB -->
+  <meta name="description" content="Häagen-Dazs España">
 
-  <!-- Autor -->
+  <!-- AUTORES -->
   <meta name="autor" content="Miriam Brillaxis González-Amézqueta, Marina Garrido Andrés y Rosa Terrés Morata">
 
-  <!-- Diseño responsive -->
+  <!-- RESPONSIVE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Favicon -->
+  <!-- FAVICON -->
   <link rel="icon" type="image/x-icon" href="media/favicon/haagen-dazs-logo.svg">
-
-  <!-- TYPEKIT LO TENEMOS ABAJO TAMBIÉN -->
-  <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css">
 
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <!-- LIGHTBOX CSS -->
-  <link href="css/lightbox.css" rel="stylesheet">
      
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,28 +36,29 @@
 
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
   
-    <!-- Pop-up de cookies -->
-    <!-- <div id="cookie-popup">
-      <div>
-          <h2></b>AVISO DE COOKIES<b></h2>
-          <p>Estas cookies no se comen, pero quédate y ¡verás que los helados sí!</p>
+    <!-- POP-UP DE COOKIES -->
+    <div id="cookie-popup">
+      <div class="position-fixed p-5 d-flex flex-column align-items-center text-center">
+          <h2 class="fs-3 p-0"><b>AVISO DE COOKIES</b></h2>
+          <p class="fs-5">Estas cookies no se comen, pero quédate y ¡verás que los helados sí!</p>
           <div class="cookies_botones m-0 d-flex flex-row">
 
-            <div class="mx-4">
-              <button type="button" id="accept-cookies" class="btn btn-custom">ACEPTAR</button>
+            <div class="aceptar mx-4">
+              <button type="button" id="accept-cookies" class="btn-primary fs-5 w-100">ACEPTAR</button>
             </div>
             
-            <div class="mx-4">
-              <button type="button" id="reject-cookies" class="btn btn-custom">RECHAZAR</button>
+            <div class="rechazar mx-4">
+              <button type="button" id="reject-cookies" class="btn-primary fs-5 w-100">RECHAZAR</button>
             </div>
 
           </div>
       </div>    
-    </div> -->
+    </div>
 
 
   <!-- HEADER -->
@@ -78,14 +73,14 @@
           <img src="media/img/CAROUSEL_2.png" class="d-block w-100" alt="Novedades Häagen-Dazs">
         </div>
         <div class="carousel-item">
-          <img src="media/img/CAROUSEL_1.png" class="d-block w-100" alt="Novedades Häagen-Dazs">
+          <img src="media/img/CAROUSEL_3.png" class="d-block w-100" alt="Novedades Häagen-Dazs">
         </div>
       </div>
     </div>
 
     <!-- BOTÓN CARRUSEL -->
     <div class="btn_explore position-absolute start-50 translate-middle">
-      <button type="button_explore" class="btn-explore btn-primary fs-5">EXPLORE</button>
+      <button type="button" class="btn-explore btn-primary fs-5">EXPLORE</button>
     </div> 
 
   </header>
@@ -99,7 +94,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav me-auto" style="width:100%;">
+        <ul class="navbar-nav me-auto w-100">
           <li class="nav-item">
             <a class="nav-link fs-4" href="#">BEST SELLERS</a>
           </li>
@@ -108,7 +103,7 @@
           </li>
           <li class="nav-item-logo">
             <a class="navbar-brand mx-auto" href="#">
-              <img src="media/img/hagen-dazs-logo_menu.svg" alt="Logo" width="100" height="auto">
+              <img src="media/img/hagen-dazs-logo_menu.svg" alt="HäagenDazs Logo" class="w-100">
             </a>
           </li>
           <li class="nav-item">
@@ -166,18 +161,19 @@
   <main>
       <!-- INTRODUCCIÓN -->
       <section id="introduccion">
-        <div class="introduccion-container-fluid"> 
+        <div class="container-fluid"> 
           <div class="row align-items-center">       
+
             <!-- TEXTO -->
             <div class="col-xl-6 col-lg-12 d-flex flex-column justify-content-center">
-              <h2 class="fs-1 intro-text data-scroll-container" style="word-wrap: break-word;">
-                Thät’s <br> Dazs
-              </h2>
+              <h2 class="fs-1 intro-text data-scroll-container text-wrap">Thät’s<br>Dazs</h2>
             </div>
+
             <!-- IMAGEN -->
-            <div class="thatsdazs col-xl-6 col-lg-12 text-center">
-              <img src="media/img/THATSDAZS.png" class="img-fluid" alt="Tarrinas de helados">
+            <div class="col-xl-6 col-lg-12 text-center">
+              <img src="media/img/THATSDAZS.png" class="img-fluid w-100" alt="Tarrinas de helados de Häagen-Dazs">
             </div>
+
           </div>
         </div>
       </section>
@@ -186,11 +182,13 @@
       <section id="about_us">
         <div class="about_us">
             <div class="about_us-container-fluid d-flex flex-column align-items-center">
+
+              <!-- TÍTULO -->
               <h2 class="fs-2 mb-5 display-1 text-center"><b>ABOUT US</b></h2>
+
               <!-- TEXTO -->
-              <div class="texto_about mb-5" style="width: 80%">
-                <p>Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
-              </div>
+              <p class="texto_about mb-5 col-10">Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
+
               <!-- VIDEO -->
               <div class="video d-flex align-items-center">
                 <iframe src="https://www.youtube.com/embed/VH_qr8lB92w?si=ikQ95rTW4ovgdlp9&autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -204,17 +202,15 @@
       <section id="best_sellers">
         <div class="best_sellers">
           <h2 class="fs-2 mb-5 display-1 text-center"><b>BEST SELLERS</b></h2>
-          <div class="container-fluid text-center px-5">
-            <div class="container_bestsellers text-center">
+          <div class="container-fluid text-center px-5 col-10">
+            <div class="container_bestsellers text-center p-0">
               <div class="row align-items-start">
 
-
-
                 <!-- DULCE DE LECHE -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 pe-5 ps-0">
                   <div id="dulcedeleche" class="d-flex flex-column align-items-center mb-md-5 mb-0">
-                      <img src="media/img/BESTSELLERS/DULCEDELECHE1.png" class="img-fluid" alt="Dulce de Leche">
-                      <a class="btn fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">EXPLORE</a>
+                      <img src="media/img/BESTSELLERS/DULCEDELECHE1.png" class="img-fluid p-5" alt="Dulce de Leche">
+                      <a class="btn fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">EXPLORE</a>
                   </div>
 
                 <!-- MODAL WINDOW DE DULCE DE LECHE -->
@@ -222,7 +218,7 @@
                   <div class="modal fade" id="dulcedelecheModal" tabindex="-1" aria-labelledby="dulcedelecheModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content best-sellers-modal-content">
-                        <div class="modal-text">
+                        <div class="modal-text text-start">
                           <h2 class="fs-1 bestsellers-text" style="word-wrap: break-word;" id="dulcedelecheModalLabel">Caramel <br> spread</h2>
                           <p>Escape the everyday on a road of smooth caramel and be transported to South America with a pint of our Caramel Spread Ice Cream.<br> Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. 
                             <a href="https://www.haagen-dazs.es/en/quality-ingredients" style="text-decoration: underline;"><br> Learn more about our ingredients.</a>
@@ -236,10 +232,10 @@
                 </div>
 
                 <!-- SALTED CARAMEL -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 px-3">
                   <div id="saltedcaramel" class="d-flex flex-column align-items-center mb-md-5 mb-0">
-                      <img src="media/img/BESTSELLERS/SALTEDCARAMEL1.png" class="img-fluid" alt="Salted Caramel">
-                      <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#saltedcaramelModal" role="button">EXPLORE</a>
+                      <img src="media/img/BESTSELLERS/SALTEDCARAMEL1.png" class="img-fluid p-5" alt="Salted Caramel">
+                      <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#saltedcaramelModal" role="button">EXPLORE</a>
                   </div>
 
                   <!-- MODAL WINDOW DE SALTED CARAMEL -->
@@ -247,7 +243,7 @@
                   <div class="modal fade" id="saltedcaramelModal" tabindex="-1" aria-labelledby="saltedcaramelModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content best-sellers-modal-content">
-                        <div class="modal-text">
+                        <div class="modal-text text-start">
                           <h2 class="fs-1 bestsellers-text" style="word-wrap: break-word;" id="saltedcaramelModalLabel">
                             Salted 
                             <br>
@@ -269,10 +265,10 @@
 
 
                 <!-- BELGIAN CHOCOLATE -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 pe-0 ps-5">
                   <div id="belgianchocolate" class="d-flex flex-column align-items-center mb-md-5 mb-0">
-                      <img src="media/img/BESTSELLERS/BELGIAMCHOCOLATE1.png" class="img-fluid" alt="Belgian Chocolate">
-                      <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#belgianchocolateModal" role="button">EXPLORE</a>
+                      <img src="media/img/BESTSELLERS/BELGIAMCHOCOLATE1.png" class="img-fluid p-5" alt="Belgian Chocolate">
+                      <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#belgianchocolateModal" role="button">EXPLORE</a>
                   </div>
 
                   <!-- MODAL WINDOW DE BELGIAN CHOCOLATE -->
@@ -280,7 +276,7 @@
                   <div class="modal fade" id="belgianchocolateModal" tabindex="-1" aria-labelledby="belgianchocolateModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content best-sellers-modal-content">
-                        <div class="modal-text">
+                        <div class="modal-text text-start">
                           <h2 class="fs-1 bestsellers-text" style="word-wrap: break-word;" id="belgianchocolateModalLabel">
                             Belgian 
                             <br>
@@ -315,17 +311,10 @@
             <div class="container_bestsellers text-center">
               <div class="row align-items-start">
                 <!-- QUALITY -->
-                <div class="quality col-12 col-lg-4">
-                  <div id="quality" class="d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0">
-                    <img src="media/img/VALUES/VALUES-01.png" 
-                         class="img-fluid" 
-                         alt="quality" 
-                         style="cursor: pointer;" 
-                         data-bs-toggle="modal" 
-                         data-bs-target="#qualityModal">
-                    <h2 class="position-absolute top-50 start-50 translate-middle  fs-4">
-                    QUALITY
-                    </h2>
+                <div class="quality col-12 col-lg-4 p-0">
+                  <div id="quality" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0 me-4">
+                    <img src="media/img/VALUES/VALUES-01.png" class="img-fluid w-100" alt="quality" data-bs-toggle="modal" data-bs-target="#qualityModal">
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-3 m-0">QUALITY</h2>
                   </div>
                 
                   <!-- MODAL -->
@@ -341,17 +330,10 @@
                 </div>
 
                 <!-- SUSTAINABILITY -->
-                <div class="sustainablity col-12 col-lg-4">
-                  <div id="sustainablity" class="d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0">
-                    <img src="media/img/VALUES/VALUES-02.png" 
-                         class="img-fluid" 
-                         alt="sustainablity" 
-                         style="cursor: pointer;" 
-                         data-bs-toggle="modal" 
-                         data-bs-target="#sustainablityModal">
-                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4">
-                    SUSTAINABILITY
-                    </h2>
+                <div class="sustainablity col-12 col-lg-4 p-0">
+                  <div id="sustainablity" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-4 me-4">
+                    <img src="media/img/VALUES/VALUES-02.png" class="img-fluid w-100" alt="sustainablity" data-bs-toggle="modal" data-bs-target="#sustainablityModal">
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-3 m-0">SUSTAINABILITY</h2>
                   </div>
                 
                   <!-- MODAL -->
@@ -367,17 +349,10 @@
                 </div>
 
                 <!-- CREATIVITY -->
-                <div class="creativity col-12 col-lg-4">
-                  <div id="creativity" class="d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0">
-                    <img src="media/img/VALUES/VALUES-03.png" 
-                         class="img-fluid" 
-                         alt="creativity" 
-                         style="cursor: pointer;" 
-                         data-bs-toggle="modal" 
-                         data-bs-target="#creativityModal">
-                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4">
-                      CREATIVITY
-                    </h2>
+                <div class="creativity col-12 col-lg-4 p-0">
+                  <div id="creativity" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0 me-4">
+                    <img src="media/img/VALUES/VALUES-03.png" class="img-fluid w-100" alt="creativity" data-bs-toggle="modal" data-bs-target="#creativityModal">
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-3 m-0">CREATIVITY</h2>
                   </div>
                 
                   <!-- MODAL -->
@@ -390,7 +365,9 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -399,21 +376,21 @@
       
 
       <!-- PRODUCTS -->
-      <div class="products">
-        <section id="products">
+      <section id="products">
+        <div class="products">
 
-          <div class="products-container-fluid">
-            
-            <h2 class="fs-2 mb-5 display-1 text-center"><b>PRODUCTS</b></h2>
+        <div class="container-fluid">
+          
+          <h2 class="fs-2 mb-5 display-1 text-center"><b>PRODUCTS</b></h2>
 
-          </div>
-
-        </section>
+        </div>
       </div>
+
+      </section>
       
       <!-- NEWS -->
-      <div class="news">
         <section id="news">
+          <div class="news">
 
           <div>
             
@@ -421,7 +398,7 @@
   
             <div class="container-fluid row justify-content-between">
 
-              <div class="card col-12 col-lg-4 d-flex justify-content-center">
+              <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
                 <div class="card-img">
                   <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
                 </div>
@@ -432,13 +409,13 @@
   
                   <p class="card-text text-center fs-5">Last week end we had a workshop at Gran Plaza 2 in Madrid. Create your own flavor of ice cream with us.</p>
   
-                  <a href="#" class="btn btn-custom fs-5">READ MORE</a>
+                  <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
   
                 </div>
               </div>
               
 
-              <div class="card col-12 col-lg-4 d-flex justify-content-center">
+              <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
                 <div class="card-img">
                   <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
                 </div>
@@ -449,12 +426,12 @@
   
                   <p class="card-text text-center fs-5">This flavor ir back for the holiday season! Only a limited units are available at grocery stores.</p>
   
-                  <a href="#" class="btn btn-custom fs-5">READ MORE</a>
+                  <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
   
                 </div>
               </div>
 
-              <div class="card col-12 col-lg-4 d-flex justify-content-center">
+              <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
                 <div class="card-img">
                   <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
                 </div>
@@ -465,7 +442,7 @@
   
                   <p class="card-text text-center fs-5">Your favorite flavors of ice cream can now be eaten as a yogurt. How is that possible? </p>
   
-                  <a href="#" class="btn btn-custom fs-5">READ MORE</a>
+                  <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
   
                 </div>
               </div>
@@ -473,84 +450,81 @@
             </div>
 
           </div>
-      
+        </div>
+
         </section>
-      </div>
 
       <!-- WAVY -->
 
       <div id="wavy">
-        <figure>
-          <img src="media/img/WAVY.png">
+        <figure class="m-0">
+          <img src="media/img/WAVY.png" alt="Decoracion Häagen-Dazs" class="w-100">
          </figure>
       </div>
       
     </main>
 
      <!-- FOOTER -->
-     <footer>
+     <footer class="p-4">
       <div class="footer-container">
 
         <!-- LOGO -->
 
-        <div class="container-fluid">
+        <div class="container-fluid me-0">
           <div class="d-flex row">
-            <div class="col-sm-2 col-lg-5">
-            </div>
-  
+            <div class="col-sm-2 col-lg-5"></div>
             <div class="col-sm-2 col-lg-5"></div>
   
             <div class="col-sm-8 col-lg-2">
               <figure>
-                <img src="media/img/hagen-dazs-logo_menu.svg">
+                <img src="media/img/hagen-dazs-logo_menu.svg" alt="Logo Häagen-Dazs™">
                </figure>
             </div>
           </div>
-          
-          
          </div>
-
-        
-         
           
         <!-- CONTENIDO -->
-          <div class="row text-center">
+          <div class="row text-center me-0">
               <div class="col-md-4">
                   <div class="footer_text fs-5">
-                  <a href="#about_us"><b>ABOUT US</b></a>
-                  <a href="#best_sellers"><b>BEST SELLERS</b></a>
-                  <a href="#values"><b>VALUES</b></a>
-                  <a href="#products"><b>PRODUCTS</b></a>
-                  <a href="#news"><b>NEWS</b></a>
-                 </div>
+                    <ul class="list-unstyled">
+                      <li><a href="#about_us" class="text-decoration-none d-block m-2"><b>ABOUT US</b></a></li>
+                      <li><a href="#best_sellers" class="text-decoration-none d-block m-2"><b>BEST SELLERS</b></a></li>
+                      <li><a href="#values" class="text-decoration-none d-block m-2"><b>VALUES</b></a></li>
+                      <li><a href="#products" class="text-decoration-none d-block m-2"><b>PRODUCTS</b></a></li>
+                      <li><a href="#news" class="text-decoration-none d-block m-2"><b>NEWS</b></a></li>
+                    </ul>
+                  </div>
               </div>
+
               <div class="col-md-4">
-                  <div class="footer_text fs-5">
-                    <p>General Mills Ibérica, S.A.U.</p>
-                    <p>Avda de Burgos, 19, 4ªplanta
-                      28036 MADRID </p>   
+                  <div class="footer_text fs-5 m-2">
+                    <p>General Mills Ibérica, S.A.U.<br>Avenida de Burgos, 19, 4ªplanta, 28036, Madrid</p>
                   </div>  
               </div>
               <div class="col-md-4">
                   <div class="social-icons fa-3x">
-                      <ul class="d-flex">
-                          <li><a href="https://www.instagram.com/haagendazs_es/?hl=en"><i class="fa-brands fa-instagram p-1 fs-3"></i></a></li>
-                          <li><a href="https://www.facebook.com/haagendazstt/"><i class="fa-brands fa-facebook p-1 fs-3"></i></a></li>
-                          <li> <a href="https://www.youtube.com/user/HaagenDazsEs"><i class="fa-brands fa-youtube p-1 fs-3"></i></a></li>  
+                      <ul class="d-flex justify-content-center list-unstyled gap-4 p-0">
+                          <li><a href="https://www.instagram.com/haagendazs_es/?hl=en d-block" class="text-decoration-none m-2"><i class="fa-brands fa-instagram p-1 fs-3"></i></a></li>
+                          <li><a href="https://www.facebook.com/haagendazstt/ d-block" class="text-decoration-none m-2"><i class="fa-brands fa-facebook p-1 fs-3"></i></a></li>
+                          <li><a href="https://www.youtube.com/user/HaagenDazsEs d-block" class="text-decoration-none m-2"><i class="fa-brands fa-youtube p-1 fs-3"></i></a></li>  
                       </ul>
                   </div>
               </div>
           </div>
       </div>
      </footer>
-    <!-- JAVASCRIPT BOOTSTRAP -->
+
+    <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-XopO4E0qeKeK0xZRroHAlXJxED82InYcs5QJvArZ+lC3oU6zZBpi3MxE0Q95t9f3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- LOCOMOTIVE SCROLL JS -->
+    <!-- JS LOCOMOTIVE SCROLL -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
-    <!-- SCRIPT -->
+
+    <!-- JS PROPIO -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -2,11 +2,6 @@
 
 
 $(document).ready(function(){
-    // LOCOMOTIVE JS
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-    });
 
     // POP UP
 
@@ -27,6 +22,15 @@ $(document).ready(function(){
 
 
 });
+
+// $(document).ready(function(){
+//     // LOCOMOTIVE JS
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('[data-scroll-container]'),
+//         smooth: true
+//     });
+
+// });
 
 // MODAL WINDOW
 // document.addEventListener('DOMContentLoaded', function () {

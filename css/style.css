@@ -83,7 +83,12 @@ h2 {
     border-radius: 4rem;
     font-weight: 600;
     font-size: 1em;
-    width: 60%;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-rosa_claro);
+    transition: 0.5s;
 }
 
 .btn-custom, .btn-explore {
@@ -100,7 +105,7 @@ h2 {
 
 .btn-explore:hover {
     background-color: var(--color-rosa_claro);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* .btn-custom:hover {
@@ -112,6 +117,7 @@ h2 {
 /* .btn-custom p:hover {
 	color: white;
 } */
+
 /*____________________ */
 /* POP UP */
 
@@ -119,41 +125,36 @@ h2 {
 	display: none;
 }
 
-#cookie-popup h2 {
-    padding: 0;
-}
-
 #cookie-popup > div {
 	z-index: 999;
-    position: fixed;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--color-rosa_oscuro);
+    background-color: var(--color-burdeos);
     border-radius: 32px;
-    box-shadow: 0 0 10px var(--color-negro_traslucido);
-    text-align: center;
-	padding: 3rem;
-	display: flex;
-	flex-direction: column;    
-	align-items: center;   
-    width: 70%;
+    width: 60%;
+}
+
+#cookie-popup h2 {
+	color: white;
 }
 
 #cookie-popup p {
-    font-size: 2rem;
-	color:var(--color-negro);
-	padding: 2%;
+	color: white;
 }
 
 #cookie-popup .btn-primary {
     padding: 1rem 2rem;
-    font-size: 1.75rem;
 }
 
-#accept-cookies > .btn-primary > p {
-	color: var(--color-negro);
+.aceptar button, .rechazar button {
+    background-color: var(--color-naranja);
 }
+
+.aceptar button:hover, .rechazar button:hover {
+    background-color: var(--color-rosa_claro);
+}
+
 
 
 /*____________________ */
@@ -295,11 +296,12 @@ nav li {
 
 /*____________________ */
 /* INTRODUCTION */
-#introduccion, .introduccion-fluid {
+
+#introduccion, #introduccion > .container-fluid  {
     background-color: var(--color-burdeos);
 }
 
-.introduccion-container-fluid {
+#introduccion > .container-fluid {
     padding: 5%;
 }
 
@@ -307,9 +309,6 @@ nav li {
     color: var(--color-rosa_claro);
 }
 
-.thatsdazs > img {
-    width: 100%;
-}
 
 
 /* ____________ */
@@ -361,52 +360,24 @@ nav li {
 }
 
 /* CARD */
-.best_sellers > .container-fluid {
-    width: 85%;
-}
-
-.container_bestsellers {
-    padding: 0;
-}
-
-.container_bestsellers > div > div:first-child {
-    padding-right: 2rem;
-    padding-left: 0;
-}
-
-.container_bestsellers > div > div:nth-child(2){
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-
-.container_bestsellers > div > div:last-child {
-    padding-left: 2rem;
-    padding-right: 0;
-}
 
 #dulcedeleche, #saltedcaramel, #belgianchocolate {
     background-color: var(--color-burdeos);
     border-radius: 4rem;
 }
 
-#dulcedeleche > img, #saltedcaramel > img, #belgianchocolate > img {
-    padding: 3em;
-}
-
 #dulcedeleche > a, #saltedcaramel > a, #belgianchocolate > a {
     background-color: var(--color-rosa_claro);
-    margin-bottom: 1.5em;
-    margin-top: 0;
 }
 
 #dulcedeleche > a:hover, #saltedcaramel > a:hover, #belgianchocolate > a:hover {
     background-color: var(--color-rosa_medio);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* MODAL */
 .bestsellers-text {
-    color:var(--color-burdeos);
+    color: var(--color-burdeos);
 }
 
 .modal {
@@ -433,7 +404,6 @@ nav li {
 }
 
 .modal-text {
-    text-align: left;
     padding-right: 25rem;
 }
 
@@ -441,6 +411,7 @@ nav li {
 
 /* ____________ */
 /* VALUES  */
+
 #values {
     background-color: var(--color-rosa_medio);
 }
@@ -453,52 +424,32 @@ nav li {
     color: var(--color-amarillo);
 }
 
-#quality, #sustainablity, #creativity {
-    position: relative;
-    overflow: hidden; 
+#quality, #sustainablity, #creativity, #quality > img, #sustainablity > img, #creativity > img {
     cursor: pointer;
 }
 
-.values > div > div > div > div {
-    padding: 0;
-}
-
-.values > div > div > div > div:first-child {
-    padding-right: 0 !important;
-}
-
-#quality {
-    margin-left: 0 !important;
-    margin-right: 2em !important;
-}
 
 #quality:hover, #sustainablity:hover, #creativity:hover {
     transform: scale(1.05); 
-    transition: transform 1s ease; 
+    transition: transform 0.5s ease; 
 }
 
 #quality > img, #sustainablity > img, #creativity > img {
     border-radius: 4rem;
-    width: 100%;
-    height: 100%; 
     object-fit: cover; 
 }
 
 #quality > h2, #sustainablity > h2, #creativity > h2 {
     text-shadow: 6px 4px 16px rgba(0, 0, 0, 0.8) !important;
-    margin: 0;
-    color: rgb(254, 245, 231);
+    color: #fef5e7;
 }
 
 /* MODAL */
 .quality > div:last-child {
-    /* background-color: rgba(0, 0, 0, 0.3); */
     display: flex !important;
     align-items: center;
     justify-content: center;
 }
-
-
 
 
 
@@ -514,20 +465,14 @@ nav li {
 } */
 
 
-
-
-
-
-
 /* ____________ */
 /* PRODUCTS */
-.products {
+
+#products {
     background-color: var(--color-rosa_oscuro);
 }
 
-#products {
-    z-index: 1;
-    position: relative;
+.products {
     background-color: var(--color-burdeos);
     border-radius: 100px 100px 0 0;
 }
@@ -535,14 +480,11 @@ nav li {
 
 /* ____________ */
 /* NEWS  */
-
-.news {
-    background-color: var(--color-rosa_medio);
+#news {
+    background-color: var(--color-burdeos);
 }
 
-#news {
-    z-index: 1;
-    position: relative;
+.news {
     background-color: var(--color-rosa_medio);
     border-radius: 100px 100px 0 0;
 }
@@ -553,8 +495,6 @@ nav li {
 
 #news .card {
     background-color: var(--color-naranja);
-    padding: 0;
-    border: none;
     border-radius: 4rem;
     width: 30%;
 }
@@ -564,17 +504,14 @@ nav li {
 }
 
 #news h1 {
-    font-weight: 500;
     color: var(--color-burdeos); 
+    font-weight: 500;
 }
 
 #news p {
     color: var(--color-burdeos);
 }
 
-#news .btn-custom {
-    width: auto;
-}
 
 /* ____________ */
 /* WAVY */
@@ -583,52 +520,18 @@ nav li {
     background-color: var(--color-rosa_medio);
 }
 
-#wavy figure {
-    margin: 0;
-}
-
-#wavy img {
-    width: 100%;
-}
 
 /* ____________ */
 /* FOOTER */
 
 footer {
     background-color: var(--color-burdeos);  
+}
+
+footer, footer a {
     color: var(--color-blanco);
-    padding: 1.5rem;
 }
 
-footer h3, footer p {
-    margin-top: 1.5rem;
-}
-
-footer a {
-    color: var(--color-blanco);
-    text-decoration: none;
-    display: block;
-}
-
-footer a, footer p {
-    margin: 0.5rem;
-}
-
-.footer-container > div {
-    margin-right: 0;
-}
-
-.social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.social-icons > ul > li {
-    display: inline;
-}
 
 footer a:hover,.social-icons:hover {
     color: var(--color-rosa_claro); 
