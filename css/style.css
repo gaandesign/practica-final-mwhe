@@ -161,7 +161,7 @@ h2 {
 /* HEADER */
 /* CAROUSEL IMAGES */
 #carousel_inicial {
-    background-color: #40061E;
+    background-color: var(--color-burdeos);
 }
 
 .carousel-item > img {
@@ -180,7 +180,7 @@ h2 {
     top: 5%;
     width: 90%;
     margin-left: 5%;
-    background-color: #40061E !important;
+    background-color: var(--color-burdeos) !important;
     border-radius: 6rem;
     height: 6rem;
     display: flex;
@@ -214,7 +214,7 @@ h2 {
 }
 
 .nav-item > a {
-    color: white;
+    color: var(--color-blanco);
 }
 
 .nav-item-logo {
@@ -361,7 +361,6 @@ nav li {
 }
 
 /* CARD */
-
 .best_sellers > .container-fluid {
     width: 85%;
 }
@@ -406,19 +405,20 @@ nav li {
 }
 
 /* MODAL */
+.bestsellers-text {
+    color:var(--color-burdeos);
+}
+
 .modal {
     height: 100%; 
     width: 100%;
     margin: 0;
     background-color: var(--color-naranja); 
-	opacity: 0;
 }
 
-
 .modal-dialog {
-    height: 100vh; 
-    width: 100vw;
-    background-color: red;
+    /* height: 100vh; 
+    width: 100vw; */
     margin: 0;
     padding: 0;
 }
@@ -426,14 +426,17 @@ nav li {
 .modal-content {
     display: flex;
     flex-direction: row;
-    background-color: green;
+    background-color: var(--color-naranja);
     padding: 5%;
     padding-right: 0;
+
 }
 
 .modal-text {
     text-align: left;
+    padding-right: 25rem;
 }
+
 
 
 /* ____________ */

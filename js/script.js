@@ -1,20 +1,12 @@
 // console.log("online");
 
-// LIBRERIA AOS
-window.onload = function () {
-    AOS.init({
-        duration: 1200,
-        // once: true,
-    });
-};
-// LOCOMOTIVE JS
-import LocomotiveScroll from 'locomotive-scroll';
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-});
 $(document).ready(function(){
+    // LOCOMOTIVE JS
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+    });
 
     // POP UP
 
@@ -44,3 +36,6 @@ $(document).ready(function(){
 //     }
 // });
 
+document.addEventListener('DOMContentLoaded', function () {
+   
+});
