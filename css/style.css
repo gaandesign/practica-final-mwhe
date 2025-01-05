@@ -21,8 +21,8 @@
 }
 
 .best_sellers, .values, .news { 
-    border-top-left-radius: 4rem;
-    border-top-right-radius: 4rem;
+    border-top-left-radius: b;
+    border-top-right-radius: b;
     padding: 5%;
 }
 
@@ -103,7 +103,7 @@ h2 {
 }
 
 .btn-primary:hover, .btn-custom:hover, .btn-explore:hover {
-    background-color: var(--color-rosa_claro);
+    background-color: var(--color-rosa_medio);
     transition: 0.5s;
 }
 
@@ -147,8 +147,8 @@ h2 {
 }
 
 .carousel-item > img {
-    border-bottom-left-radius: 6rem;
-    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: b;
+    border-bottom-right-radius: b;
 }
 
 .btn_explore {
@@ -163,8 +163,8 @@ h2 {
     width: 90%;
     margin-left: 5%;
     background-color: var(--color-burdeos) !important;
-    border-radius: 6rem;
-    height: 6rem;
+    border-radius: b;
+    height: b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +175,7 @@ h2 {
     margin-right: 0;
     padding-left: 3rem;
     padding-right: 3rem;
-    height: 6rem;
+    height: b;
 }
 
 #navbarResponsive {
@@ -183,11 +183,11 @@ h2 {
     align-items: center;
     justify-content: center;
     align-content: center !important;
-    height: 6rem;
+    height: b;
 }
 
 .navbar-nav {
-    height: 6rem;
+    height: b;
     margin: 0 !important;
     display: flex;
     align-content: center !important;
@@ -299,8 +299,8 @@ nav li {
 
 .about_us {
     background-color: var(--color-rosa_oscuro);
-    border-top-left-radius: 6rem;
-    border-top-right-radius: 6rem;
+    border-top-left-radius: b;
+    border-top-right-radius: b;
     padding: 5%;
 }
 
@@ -368,28 +368,53 @@ nav li {
     height: 100%; 
     width: 100%;
     margin: 0;
-    background-color: var(--color-naranja); 
+    background-color: #40061e82;
 }
 
 .modal-dialog {
-    /* height: 100vh; 
-    width: 100vw; */
-    margin: 0;
-    padding: 0;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 1.5%;
 }
 
 .modal-content {
     display: flex;
     flex-direction: row;
-    background-color: var(--color-naranja);
     padding: 5%;
+    border-radius: 4rem;
     padding-right: 0;
+}
 
+.dulcedeleche > div:last-child > div > div > div > a:last-child:hover, .saltedcaramel > div:last-child > div > div > div > a:last-child:hover {
+    background-color: var(--color-burdeos);
+    transition: 1s;
+}
+
+.dulcedeleche > div:last-child > div > div {
+    background-color: var(--color-naranja);
+}
+
+.saltedcaramel > div:last-child > div > div {
+    background-color: #f7c85c;
+}
+
+.belgianchocolate > div:last-child > div > div {
+    background-color: #cc8451;
+}
+
+.modal-content > img {
+    height: 80vh;
 }
 
 .modal-text {
-    padding-right: 25rem;
+    padding-right: 3%;
 }
+
+.modal-text > h2 {
+    margin-bottom: 2rem;
+}
+
+
 
 
 /* ____________ */
@@ -445,7 +470,6 @@ nav li {
 
 /* ____________ */
 /* PRODUCTS */
-
 #products {
     background-color: var(--color-rosa_oscuro);
 }
