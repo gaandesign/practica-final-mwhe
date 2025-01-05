@@ -20,9 +20,9 @@
     border: 1px solid magenta;
 }
 
-.best_sellers, .values, .news { 
-    border-top-left-radius: b;
-    border-top-right-radius: b;
+.best_sellers, .values, .news, .products, .about_us { 
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
     padding: 5%;
 }
 
@@ -147,8 +147,8 @@ h2 {
 }
 
 .carousel-item > img {
-    border-bottom-left-radius: b;
-    border-bottom-right-radius: b;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
 }
 
 .btn_explore {
@@ -163,8 +163,7 @@ h2 {
     width: 90%;
     margin-left: 5%;
     background-color: var(--color-burdeos) !important;
-    border-radius: b;
-    height: b;
+    border-radius: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,11 +182,9 @@ h2 {
     align-items: center;
     justify-content: center;
     align-content: center !important;
-    height: b;
 }
 
 .navbar-nav {
-    height: b;
     margin: 0 !important;
     display: flex;
     align-content: center !important;
@@ -295,13 +292,14 @@ nav li {
 /* ABOUT US  */
 #about_us {
     background-color: var(--color-burdeos);
+    
 }
 
 .about_us {
     background-color: var(--color-rosa_oscuro);
-    border-top-left-radius: b;
-    border-top-right-radius: b;
     padding: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 #about_us h2 {
@@ -317,12 +315,32 @@ nav li {
 }
 
 .video > iframe {
-    width: 80%;
+    width: 95%;
     height: auto;
     aspect-ratio: 16 / 9;
     border-radius: 4rem;
     border: none; 
 }
+
+.accordion > div {
+    background-color: var(--color-rosa_claro);
+}
+
+.accordion > div > h2 > button {
+    padding: 2%;
+}
+
+.accordion{
+    --bs-accordion-btn-bg:var(--color-rosa_medio);
+    --bs-accordion-active-bg:var(--color-rosa_medio);
+    --bs-accordion-active-color: var(--color-rosa_claro);
+    --bs-accordion-btn-focus-boxs-shadow:none;
+}
+
+.accordion-body > p {
+    font-size: 1.8rem;
+}
+
 
 
 /* ____________ */
@@ -415,8 +433,6 @@ nav li {
 }
 
 
-
-
 /* ____________ */
 /* VALUES  */
 #values {
@@ -476,7 +492,11 @@ nav li {
 
 .products {
     background-color: var(--color-burdeos);
-    border-radius: 100px 100px 0 0;
+    padding: 5%;
+}
+
+.products > h2 {
+    color: var(--color-amarillo);
 }
 
 
@@ -538,9 +558,7 @@ footer a:hover,.social-icons:hover {
 }
 
 @media screen and (max-width: 1600px) {
-
     /* CARD */
-
     .best_sellers > .container-fluid , .values > .container-fluid {
         width: 100%;
     }
