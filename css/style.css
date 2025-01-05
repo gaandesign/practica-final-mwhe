@@ -21,8 +21,8 @@
 }
 
 .best_sellers, .values, .news, .products, .about_us { 
-    border-top-left-radius: 6rem;
-    border-top-right-radius: 6rem;
+    border-top-left-radius: ;
+    border-top-right-radius: ;
     padding: 5%;
 }
 
@@ -147,8 +147,8 @@ h2 {
 }
 
 .carousel-item > img {
-    border-bottom-left-radius: 6rem;
-    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ;
 }
 
 .btn_explore {
@@ -163,7 +163,7 @@ h2 {
     width: 90%;
     margin-left: 5%;
     background-color: var(--color-burdeos) !important;
-    border-radius: 6rem;
+    border-radius: ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +302,7 @@ nav li {
     justify-content: center;
 }
 
-#about_us h2 {
+#about_us > h2 {
     color: var(--color-amarillo);
 }
 
@@ -330,7 +330,7 @@ nav li {
     padding: 2%;
 }
 
-.accordion{
+.accordion {
     --bs-accordion-btn-bg:var(--color-rosa_medio);
     --bs-accordion-active-bg:var(--color-rosa_medio);
     --bs-accordion-active-color: var(--color-rosa_claro);
@@ -341,6 +341,9 @@ nav li {
     font-size: 1.8rem;
 }
 
+.accordion-button {
+    color: var(--color-rosa_claro);
+}
 
 
 /* ____________ */
@@ -451,7 +454,6 @@ nav li {
     cursor: pointer;
 }
 
-
 #quality:hover, #sustainablity:hover, #creativity:hover {
     transform: scale(1.05); 
     transition: transform 0.5s ease; 
@@ -499,6 +501,24 @@ nav li {
     color: var(--color-amarillo);
 }
 
+.row-1, .row-2, .row-3 {
+    padding: 0;
+}
+
+.products-1 > div > div > div > div {
+    background-color: var(--color-rosa_medio);
+    border-radius: 4rem;
+}
+
+.products-1 > div > div > div > div > h2 {
+    padding: 7%;
+    color: var(--color-amarillo);
+}
+
+.products-1 > div > div > div > div > img {
+    border-radius: 4rem;
+}
+
 
 /* ____________ */
 /* NEWS  */
@@ -509,6 +529,10 @@ nav li {
 .news {
     background-color: var(--color-rosa_medio);
     border-radius: 100px 100px 0 0;
+}
+
+.news > h2 {
+    color: var(--color-amarillo);
 }
 
 #news h1, #news p {
@@ -529,8 +553,38 @@ nav li {
     border-radius: 4rem 4rem 0 0;
 }
 
+.news > div {
+    display: flex;
+    justify-content: center;
+}
 
+.news > div > div, .news > div > div > div {
+    margin-left: 0;
+    margin-right: 0;
+}
 
+.news > div > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.news > div > div > div {
+    display: flex;
+    justify-content: center;
+}
+
+.news > div > div > div > div:first-child {
+    margin-right: 2em;
+}
+
+.news > div > div > div > div:nth-child(2) {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.news > div > div > div > div:last-child {
+    margin-left: 2em;
+}
 
 
 /* ____________ */
