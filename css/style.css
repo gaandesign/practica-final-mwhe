@@ -69,10 +69,18 @@ h2 {
     font-weight: 900;
 } 
 
+/* ___________________ */
+/* PADDING */
+.pe-5 {
+    padding-right: 2rem !important;
+}
+
+.ps-5 {
+    padding-left: 2rem !important;
+}
+
 /*____________________ */
-
 /* BOTONES */
-
 .btn-primary, .btn-custom, .btn-explore {
     border: none;
     border-radius: 4rem;
@@ -87,7 +95,6 @@ h2 {
     padding: 0.5em;
 }
 
-
 .btn-custom, .btn-explore {
     background-color: var(--color-burdeos);
     color: white;
@@ -95,17 +102,14 @@ h2 {
     padding-right: 2.5rem;
 }
 
-
 .btn-primary:hover, .btn-custom:hover, .btn-explore:hover {
     background-color: var(--color-rosa_claro);
     transition: 0.5s;
 }
 
 
-
 /*____________________ */
 /* POP UP */
-
 #cookie-popup {
 	display: none;
 }
@@ -132,7 +136,6 @@ h2 {
 .aceptar button:hover, .rechazar button:hover {
     background-color: var(--color-rosa_claro);
 }
-
 
 
 /*____________________ */
@@ -288,7 +291,6 @@ nav li {
 }
 
 
-
 /* ____________ */
 /* ABOUT US  */
 #about_us {
@@ -346,7 +348,6 @@ nav li {
 }
 
 /* CARD */
-
 #dulcedeleche, #saltedcaramel, #belgianchocolate {
     background-color: var(--color-burdeos);
     border-radius: 4rem;
@@ -393,7 +394,6 @@ nav li {
 
 /* ____________ */
 /* VALUES  */
-
 #values {
     background-color: var(--color-rosa_medio);
 }
@@ -426,24 +426,21 @@ nav li {
 }
 
 /* MODAL */
-.quality > div:last-child {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
+.quality > div:last-child, .sustainablity > div:last-child, .creativity > div:last-child {
+    background-color: #40061e82;
 }
 
-
-
-/* .quality > div:last-child {
-    background-color: rgba(61, 61, 61, 0.5);
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
+.quality > div:last-child > div, .sustainablity > div:last-child > div, .creativity > div:last-child > div {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 1.5%;
 }
 
-.quality > div:last-child > div > div {
-    background-color: var(--color-rosa_oscuro);
-} */
+.quality > div:last-child > div > div, .sustainablity > div:last-child > div > div, .creativity > div:last-child > div > div {
+    padding: 5%;
+    border-radius: 4rem;
+    background-color: var(--color-rosa_claro);
+}
 
 
 /* ____________ */
