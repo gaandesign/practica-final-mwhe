@@ -55,11 +55,7 @@ p, a {
     margin-bottom: 2rem;
     color: white;
 }
-.texto_about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .display-1 {
     font-weight: 600;
@@ -216,21 +212,13 @@ h2 {
 .about_us {
     background-color: var(--color-rosa_oscuro);
     padding: 5%;
-    display: flex;
-    justify-content: center;
+
 }
 
 .about_us h2 {
     color: var(--color-amarillo);
 }
 
-.video {
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-    width: 100%; 
-    margin: 0 auto;
-}
 
 .video > iframe {
     width: 95%;
@@ -449,15 +437,15 @@ h2 {
     border-radius: 100px 100px 0 0;
 }
 
-.news > h2 {
+.news h2 {
     color: var(--color-amarillo);
 }
 
-#news h1, #news p {
+#news p {
     color: var(--color-burdeos);
 }
 
-#news h1 {
+#news h2 {
     font-weight: 500;
 }
 
@@ -471,25 +459,12 @@ h2 {
     border-radius: 4rem 4rem 0 0;
 }
 
-.news > div {
-    display: flex;
-    justify-content: center;
-}
-
-.news > div > div, .news > div > div > div {
-    margin-left: 0;
-    margin-right: 0;
-}
 
 .news > div > div {
     padding-left: 0;
     padding-right: 0;
 }
 
-.news > div > div > div {
-    display: flex;
-    justify-content: center;
-}
 
 .news > div > div > div > div:first-child {
     margin-right: 2em;
@@ -550,6 +525,27 @@ footer a:hover,.social-icons:hover {
 /* MEDIA QUERIES L */
 
 @media screen and (max-width: 1400px) {
+    
+    .fs-1 {
+        font-size: 17rem !important;
+    }
+
+    .fs-2 {
+        font-size: 8rem !important;
+    }
+
+    .fs-3 {
+        font-size: 4rem !important;
+    }
+
+    .fs-4 {
+        font-size: 2.5rem !important;
+    }
+
+    .fs-5 {
+        font-size: 2rem !important;
+    }
+    
     .fs-4 {
         font-size: 2rem !important;
     }
