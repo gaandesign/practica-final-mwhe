@@ -160,39 +160,8 @@ h2 {
     top: 5%;
     width: 90%;
     margin-left: 5%;
-    background-color: var(--color-burdeos) !important;
+    background-color: var(--color-burdeos);
     border-radius: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    height: b;
-}
-
-#navbarResponsive {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    align-content: center !important;
-}
-
-.navbar-nav {
-    margin: 0 !important;
-    display: flex;
-    align-content: center !important;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-burdeos);
-    border-radius: 6rem;
-    height: 6rem;
-    background-color: var(--color-burdeos);
-    border-radius: 6rem;
     height: 6rem;
 }
 
@@ -200,21 +169,10 @@ h2 {
     color: white;
 }
 
-.nav-item-logo {
-    background-color: aqua;
-    height: 7rem;
+#logo_menu {
+    width: 20em;
 }
 
-.nav-item-logo > a > img {
-    height: 7rem;
-}
-
-.nav-link {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    margin: 0;
-    width: 100%;
-}
 
 /*____________________ */
 /* CAROUSEL IMAGES */
@@ -231,66 +189,6 @@ h2 {
 .btn_explore {
     padding-bottom: 15rem;
 }
-
-/* 
-nav:nth-child(2) {
-    padding: 2rem;
-}
-
-.bg-body-tertiary {
-    background-color: var(--color-blanco) !important;
-}
-
-
-nav:nth-child(2) li {
-    padding: 0 1rem;
-}
-
-#navbarNavDropdown {
-    position: relative;
-}
-
-.navbar {
-    padding: 0;
-}
-
-.navbar-nav {
-    position: absolute;
-    z-index: 1;
-    margin: 5em;
-    top: 10%
-}
-
-.nav-logo {
-    position: relative;
-    width: 10em;
-    /* position: absolute; */
-    /* bottom: -5em; */
-    /* transform: translate(-50%);
-} */
-/* 
-#logo {
-    width: 10em;
-    position: absolute;
-    bottom: -5em;
-}
-
-nav ul {
-    background-color: var(--color-rosa_oscuro);
-    padding: 1em;
-    border-radius: 2em;
-    margin: 3em;
-}
-
-nav li {
-    margin: 0 3em;
-}
-
-.nav-link {
-    color: var(--color-blanco);
-    font-size: 2em;
-} */
-
 
 /*____________________ */
 /* INTRODUCTION */
@@ -322,7 +220,7 @@ nav li {
     justify-content: center;
 }
 
-#about_us > h2 {
+.about_us h2 {
     color: var(--color-amarillo);
 }
 
@@ -638,3 +536,31 @@ footer a:hover,.social-icons:hover {
     }
 
 }
+
+/* MEDIA QUERIES XL */
+
+@media screen and (max-width: 1600px) {
+    /* CARD */
+    .best_sellers > .container-fluid , .values > .container-fluid {
+        width: 100%;
+    }
+
+}
+
+/* MEDIA QUERIES L */
+
+@media screen and (max-width: 1400px) {
+    .fs-4 {
+        font-size: 2rem !important;
+    }
+
+}
+
+/* MEDIA QUERIES M */
+
+/* MEDIA QUERIES S */
+
+/* MEDIA QUERIES XS */
+
+
+
