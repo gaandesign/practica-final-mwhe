@@ -21,8 +21,8 @@
 }
 
 .best_sellers, .values, .news, .products, .about_us { 
-    border-top-left-radius: ;
-    border-top-right-radius: ;
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
     padding: 5%;
 }
 
@@ -141,25 +141,17 @@ h2 {
 /*____________________ */
 
 /* HEADER */
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 /* CAROUSEL IMAGES */
 #carousel_inicial {
     background-color: var(--color-burdeos);
 }
 
-.carousel-item > img {
-    border-bottom-left-radius: ;
-    border-bottom-right-radius: ;
-}
 
 .btn_explore {
     padding-bottom: 15rem;
 }
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 
 /*____________________ */
 /* MENU HAMBURGUESA */
@@ -168,10 +160,8 @@ h2 {
     top: 5%;
     width: 90%;
     margin-left: 5%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     background-color: var(--color-burdeos) !important;
-    border-radius: ;
+    border-radius: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,16 +188,12 @@ h2 {
     align-content: center !important;
     align-items: center;
     justify-content: space-between;
-=======
     background-color: var(--color-burdeos);
     border-radius: 6rem;
     height: 6rem;
->>>>>>> Stashed changes
-=======
     background-color: var(--color-burdeos);
     border-radius: 6rem;
     height: 6rem;
->>>>>>> Stashed changes
 }
 
 .nav-item > a {
