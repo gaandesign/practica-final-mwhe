@@ -63,6 +63,76 @@
 
   <!-- HEADER -->
   <header>
+
+    <nav class="navbar navbar-expand-md position-absolute d-flex align-items-center justify-content-center">
+      <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+            <ul class="navbar-nav d-flex align-items-center align-content-center justify-content-between m-0">
+              
+              <li class="nav-item">
+                <a class="nav-link fs-4 m-0 w-100 px-4" href="#about_us">ABOUT US</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fs-4 m-0 w-100 px-4" href="#best_sellers">BEST SELLERS</a>
+              </li>
+             
+
+              <li class="nav-item nav-logo">
+                <a class=" nav-link d-none d-xl-flex justify-content-center" id="logo" href="#"><img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs"></a>
+              </li>
+
+              <li class="nav-item">
+                <a class=" nav-link fs-4 m-0 w-100 px-4" href="#products">PRODUCTS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class=" nav-link fs-4 m-0 w-100 px-4" href="#news">NEWS</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    <!-- MENU -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container"> -->
+        <!-- BOTON RESPONSIVE -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav me-auto w-100">
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="#">BEST SELLERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="#">PRODUCTS</a>
+            </li>
+            <li class="nav-item-logo">
+              <a class="navbar-brand mx-auto" href="#">
+                <img src="media/img/hagen-dazs-logo_menu.svg" alt="HäagenDazs Logo" class="w-100">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="#">ABOUT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
     <!-- CARRUSEL INICIAL -->
     <div id="carousel_inicial" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -84,79 +154,6 @@
     </div> 
 
   </header>
-
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- BOTON RESPONSIVE -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav me-auto w-100">
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="#">BEST SELLERS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="#">PRODUCTS</a>
-          </li>
-          <li class="nav-item-logo">
-            <a class="navbar-brand mx-auto" href="#">
-              <img src="media/img/hagen-dazs-logo_menu.svg" alt="HäagenDazs Logo" class="w-100">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="#">NEWS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="#">ABOUT US</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  
-
-    <!-- <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-
-            <ul class="navbar-nav align-items-center">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#about_us">ABOUT US</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#best_sellers">BEST SELLERS</a>
-              </li>
-             
-
-              <li class="nav-item nav-logo">
-                <a class=" nav-link d-none d-xl-flex justify-content-center" id="logo" href="#"><img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs"></a>
-              </li>
-
-              <li class="nav-item">
-                <a class=" nav-link" href="#products">PRODUCTS</a>
-              </li>
-
-              <li class="nav-item">
-                <a class=" nav-link" href="#news">NEWS</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </nav> -->
-
     
   <main>
       <!-- INTRODUCCIÓN -->
@@ -181,105 +178,20 @@
       <!-- ABOUT US -->
       <section id="about_us">
         <div class="about_us">
-            <div class="about_us-container-fluid d-flex flex-column align-items-center col-10">
+            <div class="about_us-container-fluid d-flex flex-column align-items-center">
 
               <!-- TÍTULO -->
               <h2 class="fs-2 mb-5 display-1 text-center"><b>ABOUT US</b></h2>
 
               <!-- TEXTO -->
-              <p class="texto_about mb-5 px-5">Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
+              <p class="texto_about mb-5 col-10">Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
 
               <!-- VIDEO -->
-              <div class="video d-flex align-items-center mb-5">
+              <div class="video d-flex align-items-center">
                 <iframe src="https://www.youtube.com/embed/VH_qr8lB92w?si=ikQ95rTW4ovgdlp9&autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
-
-              <!-- ACCORDION -->
-              <div class="accordion col-10 px-5" id="accordionExample" style="width: 100%; margin: 0 auto;">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="fs-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      History
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>
-                        Häagen-Dazs was founded in 1961 by Reuben and Rose Mattus in the Bronx, New York. Their vision was to create a premium ice cream that would stand out from the mass-produced varieties available at the time. Inspired by European ice cream traditions, they combined only the finest ingredients to create a rich, indulgent treat. Over the years, Häagen-Dazs has become a symbol of excellence, offering a wide range of flavors that continue to delight customers worldwide. Today, the brand is recognized for its commitment to quality and innovation in the ice cream industry.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="fs-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Mission
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>
-                        At Häagen-Dazs, our mission is simple: to create the finest ice cream in the world using the highest-quality ingredients. We believe that ice cream should be an indulgent, extraordinary experience, and we’re dedicated to pushing the boundaries of flavor, texture, and creativity. With a passion for excellence, we continually strive to delight our customers by offering unique, unforgettable flavors that inspire joy and bring people together.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="fs-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Signature Products
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                     <p>
-                      Häagen-Dazs is known for its luxurious and creamy ice cream made from the finest ingredients. Some of our most beloved signature products include:
-                      <br>
-                      Vanilla: 
-                      <br>
-                      A classic, rich flavor made with premium vanilla beans.
-                      <br>
-                      <br>
-                      Chocolate Belgian: 
-                      <br>
-                      A decadent chocolate ice cream made with Belgian chocolate.
-                      <br>
-                      <br>
-                      Salted Caramel: 
-                      <br>
-                      A sweet and savory indulgence combining rich caramel with a touch of sea salt.
-                      <br>
-                      <br>
-                      Cookies & Cream: 
-                      <br>
-                      A favorite, featuring smooth vanilla ice cream with crunchy chocolate cookie pieces.
-                      <br>
-                      <br>
-                      Dulce de Leche: 
-                      <br>
-                      A creamy, caramel-infused treat with a touch of sweetness. These flavors, along with many others, have made Häagen-Dazs a beloved brand worldwide.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="fs-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                      Global Presence
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                     <p>
-                      Häagen-Dazs is available in over 80 countries, with thousands of locations around the world. From the United States to Europe, Asia, and beyond, our premium ice cream is enjoyed by millions. Whether in local supermarkets, boutique shops, or dedicated Häagen-Dazs stores, we are committed to bringing our high-quality ice cream to ice cream lovers globally. As we continue to expand, Häagen-Dazs remains a symbol of luxury, craftsmanship, and innovation, providing customers with an exceptional dessert experience wherever they are.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
       </section>
       
 
@@ -292,20 +204,21 @@
               <div class="row align-items-start">
 
                 <!-- DULCE DE LECHE -->
-                <div class="dulcedeleche col-12 col-lg-4 pe-5 ps-0">
+                <div class="col-12 col-lg-4 pe-5 ps-0">
                   <div id="dulcedeleche" class="d-flex flex-column align-items-center mb-md-5 mb-0">
-                    <img src="media/img/BESTSELLERS/DULCEDELECHE1.png" class="img-fluid p-5" alt="Dulce de Leche">
-                    <a class="btn mb-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">EXPLORE</a>
+                      <img src="media/img/BESTSELLERS/DULCEDELECHE1.png" class="img-fluid p-5" alt="Dulce de Leche">
+                      <a class="btn fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">EXPLORE</a>
                   </div>
 
-                  <!-- MODAL WINDOW DE DULCE DE LECHE -->
+                <!-- MODAL WINDOW DE DULCE DE LECHE -->
+
                   <div class="modal fade" id="dulcedelecheModal" tabindex="-1" aria-labelledby="dulcedelecheModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content best-sellers-modal-content">
                         <div class="modal-text text-start">
-                          <h2 class="fs-2 bestsellers-text" style="word-wrap: break-word;" id="dulcedelecheModalLabel">Dulce <br> de Leche</h2>
+                          <h2 class="fs-1 bestsellers-text" style="word-wrap: break-word;" id="dulcedelecheModalLabel">Caramel <br> spread</h2>
                           <p>Escape the everyday on a road of smooth caramel and be transported to South America with a pint of our Caramel Spread Ice Cream.<br> Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. 
-                          <a href="https://www.haagen-dazs.es/en/quality-ingredients" style="text-decoration: underline;"><br> Learn more about our ingredients.</a>
+                            <a href="https://www.haagen-dazs.es/en/quality-ingredients" style="text-decoration: underline;"><br> Learn more about our ingredients.</a>
                           </p>
                           <a href="#bestsellers" class="btn-explore btn-primary fs-5" style="text-decoration: none;">KEEP EXPLORING</a>
                         </div>
@@ -316,18 +229,19 @@
                 </div>
 
                 <!-- SALTED CARAMEL -->
-                <div class="saltedcaramel col-12 col-lg-4 px-3">
+                <div class="col-12 col-lg-4 px-3">
                   <div id="saltedcaramel" class="d-flex flex-column align-items-center mb-md-5 mb-0">
                       <img src="media/img/BESTSELLERS/SALTEDCARAMEL1.png" class="img-fluid p-5" alt="Salted Caramel">
-                      <a class="btn-bestsellers mb-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#saltedcaramelModal" role="button">EXPLORE</a>
+                      <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#saltedcaramelModal" role="button">EXPLORE</a>
                   </div>
 
                   <!-- MODAL WINDOW DE SALTED CARAMEL -->
+
                   <div class="modal fade" id="saltedcaramelModal" tabindex="-1" aria-labelledby="saltedcaramelModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content best-sellers-modal-content">
                         <div class="modal-text text-start">
-                          <h2 class="fs-2  bestsellers-text" style="word-wrap: break-word;" id="saltedcaramelModalLabel">
+                          <h2 class="fs-1 bestsellers-text" style="word-wrap: break-word;" id="saltedcaramelModalLabel">
                             Salted 
                             <br>
                             Caramel 
@@ -348,18 +262,19 @@
 
 
                 <!-- BELGIAN CHOCOLATE -->
-                <div class="belgianchocolate col-12 col-lg-4 pe-0 ps-5">
+                <div class="col-12 col-lg-4 pe-0 ps-5">
                   <div id="belgianchocolate" class="d-flex flex-column align-items-center mb-md-5 mb-0">
                       <img src="media/img/BESTSELLERS/BELGIAMCHOCOLATE1.png" class="img-fluid p-5" alt="Belgian Chocolate">
-                      <a class="btn-bestsellers mb-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#belgianchocolateModal" role="button">EXPLORE</a>
+                      <a class="btn-bestsellers fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#belgianchocolateModal" role="button">EXPLORE</a>
                   </div>
 
-                  <!-- MODAL WINDOW -->
+                  <!-- MODAL WINDOW DE BELGIAN CHOCOLATE -->
+
                   <div class="modal fade" id="belgianchocolateModal" tabindex="-1" aria-labelledby="belgianchocolateModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content best-sellers-modal-content">
                         <div class="modal-text text-start">
-                          <h2 class="fs-2 bestsellers-text" style="word-wrap: break-word;" id="belgianchocolateModalLabel">
+                          <h2 class="fs-1 bestsellers-text" style="word-wrap: break-word;" id="belgianchocolateModalLabel">
                             Belgian 
                             <br>
                             Chocolate
@@ -376,6 +291,7 @@
                       </div>
                     </div>
                   </div> 
+                  
                 </div>
               </div>
             </div>
@@ -388,52 +304,52 @@
       <section id="values">
         <div class="values">
           <h2 class="fs-2 mb-5 display-1 text-center"><b>VALUES</b></h2>
-          <div class="container-fluid text-center px-5 col-10">
+          <div class="container-fluid text-center px-5">
             <div class="container_bestsellers text-center">
               <div class="row align-items-start">
                 <!-- QUALITY -->
-                <div class="quality col-12 col-lg-4 p-0 pe-5">
-                  <div id="quality" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
+                <div class="quality col-12 col-lg-4 p-0">
+                  <div id="quality" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0 me-4">
                     <img src="media/img/VALUES/VALUES-01.png" class="img-fluid w-100" alt="quality" data-bs-toggle="modal" data-bs-target="#qualityModal">
-                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4 m-0">QUALITY</h2>
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-3 m-0">QUALITY</h2>
                   </div>
                 
                   <!-- MODAL -->
-                  <div class="modal fade" id="qualityModal" tabindex="-1" aria-labelledby="qualityModalLabel" >
+                  <!-- <div class="modal fade" id="qualityModal" tabindex="-1" aria-labelledby="qualityModalLabel" >
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content values-modal-content">
                         <div class="modal-body">
-                          <p>CAt Häagen-Dazs, quality is not just a word—it’s the heart of everything we do. From the moment we source our ingredients to the final scoop in your bowl, we uphold the highest standards to ensure every bite is a moment of indulgence. We use only the finest, all-natural ingredients, including pure cream, fresh milk, and carefully selected flavors like Madagascar vanilla and Belgian chocolate. Each step in our production process is meticulously controlled to preserve the richness, texture, and taste that have defined our brand for decades. When you choose Häagen-Dazs, you’re choosing a product crafted with care and dedication, because we believe that exceptional quality is the foundation of extraordinary taste.</p>
+                          <p>CAt Häagen-Dazs, QUALITY is not just a word—it’s the heart of everything we do. From the moment we source our ingredients to the final scoop in your bowl, we uphold the highest standards to ensure every bite is a moment of indulgence. We use only the finest, all-natural ingredients, including pure cream, fresh milk, and carefully selected flavors like Madagascar vanilla and Belgian chocolate. Each step in our production process is meticulously controlled to preserve the richness, texture, and taste that have defined our brand for decades. When you choose Häagen-Dazs, you’re choosing a product crafted with care and dedication, because we believe that exceptional QUALITY is the foundation of extraordinary taste.</p>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
 
                 <!-- SUSTAINABILITY -->
                 <div class="sustainablity col-12 col-lg-4 p-0">
-                  <div id="sustainablity" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 px-3">
+                  <div id="sustainablity" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-4 me-4">
                     <img src="media/img/VALUES/VALUES-02.png" class="img-fluid w-100" alt="sustainablity" data-bs-toggle="modal" data-bs-target="#sustainablityModal">
-                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4 m-0">SUSTAINABILITY</h2>
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-3 m-0">SUSTAINABILITY</h2>
                   </div>
                 
                   <!-- MODAL -->
-                  <div class="modal fade" id="sustainablityModal" tabindex="-1" aria-labelledby="sustainablityModalLabel">
+                  <!-- <div class="modal fade" id="sustainablityModal" tabindex="-1" aria-labelledby="sustainablityModalLabel">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content values-modal-content">
                         <div class="modal-body">
-                          <p>At Häagen-Dazs, we recognize our responsibility to care for the planet we all share. That’s why sustainablity is at the core of our operations. From sourcing ingredients responsibly to adopting eco-friendly packaging solutions, we are committed to minimizing our environmental impact. Our dairy suppliers adhere to sustainable farming practices that prioritize animal welfare and reduce carbon footprints. Additionally, we work to ensure that every step of our supply chain contributes to a healthier planet, including our efforts to reduce water and energy consumption. Sustainablity isn’t just about preserving resources—it’s about leaving a legacy of environmental stewardship for generations to come. Together, we can savor our favorite flavors while protecting the world around us.</p>
+                          <p>At Häagen-Dazs, we recognize our responsibility to care for the planet we all share. That’s why SUSTAINABILITY is at the core of our operations. From sourcing ingredients responsibly to adopting eco-friendly packaging solutions, we are committed to minimizing our environmental impact. Our dairy suppliers adhere to sustainable farming practices that prioritize animal welfare and reduce carbon footprints. Additionally, we work to ensure that every step of our supply chain contributes to a healthier planet, including our efforts to reduce water and energy consumption. SUSTAINABILITY isn’t just about preserving resources—it’s about leaving a legacy of environmental stewardship for generations to come. Together, we can savor our favorite flavors while protecting the world around us.</p>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
 
                 <!-- CREATIVITY -->
-                <div class="creativity col-12 col-lg-4 p-0 ps-5">
-                  <div id="creativity" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
+                <div class="creativity col-12 col-lg-4 p-0">
+                  <div id="creativity" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0 me-4">
                     <img src="media/img/VALUES/VALUES-03.png" class="img-fluid w-100" alt="creativity" data-bs-toggle="modal" data-bs-target="#creativityModal">
-                    <h2 class="position-absolute top-50 start-50 translate-middle fs-4 m-0">CREATIVITY</h2>
+                    <h2 class="position-absolute top-50 start-50 translate-middle fs-3 m-0">CREATIVITY</h2>
                   </div>
                 
                   <!-- MODAL -->
@@ -441,12 +357,14 @@
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content values-modal-content">
                         <div class="modal-body">
-                          <p>Häagen-Dazs isn’t just about ice cream—it’s about pushing the boundaries of what’s possible in flavor and design. Creativity is at the heart of every product we develop, from innovative flavors like Salted Caramel and Matcha Green Tea to limited-edition collaborations that surprise and delight our customers. We believe that ice cream is a canvas for artistic expression, and we strive to bring that artistry to life in every pint and scoop. Beyond flavors, we’re constantly reimagining how we connect with our customers, from unique packaging designs to inspiring advertising campaigns. Our goal is to inspire joy and spark imagination, ensuring that every experience with Häagen-Dazs feels extraordinary. Creativity is what keeps us innovating and evolving to surprise our customers time and time again.</p>
+                          <p>Häagen-Dazs isn’t just about ice cream—it’s about pushing the boundaries of what’s possible in flavor and design. CREATIVITY is at the heart of every product we develop, from innovative flavors like Salted Caramel and Matcha Green Tea to limited-edition collaborations that surprise and delight our customers. We believe that ice cream is a canvas for artistic expression, and we strive to bring that artistry to life in every pint and scoop. Beyond flavors, we’re constantly reimagining how we connect with our customers, from unique packaging designs to inspiring advertising campaigns. Our goal is to inspire joy and spark imagination, ensuring that every experience with Häagen-Dazs feels extraordinary. CREATIVITY is what keeps us innovating and evolving to surprise our customers time and time again.</p>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -457,161 +375,81 @@
       <!-- PRODUCTS -->
       <section id="products">
         <div class="products">
+
+        <div class="container-fluid">
+          
           <h2 class="fs-2 mb-5 display-1 text-center"><b>PRODUCTS</b></h2>
 
-          <div class="products-1 container-fluid text-center px-5 col-10">
-            <!-- 1 ROW -->
-            <div class="row-1 container text-center mb-5">
-              <div class="row align-items-start">
-                <!-- PINT -->
-                <div class="pint col-12 col-lg-4 p-0 pe-5">
-                  <div id="pint" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
-                    <h2 class="fs-4">PINT</h2>
-                    <img src="media/img/PRODUCTS/PINTS.png" class="img-fluid w-100" alt="PINT">
-                  </div>
-                </div>
-
-                <!-- MINI PINTS -->
-                <div class="minipints col-12 col-lg-4 p-0 px-3">
-                  <div id="minipints" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
-                    <h2 class="fs-4">MINI PINTS</h2>
-                    <img src="media/img/PRODUCTS/MINI_PINTS.png" class="img-fluid w-100" alt="MINI PINTS">
-                  </div>
-                </div>
-
-                <!-- VEGAN -->
-                <div class="vegan col-12 col-lg-4 p-0 ps-5">
-                  <div id="vegan" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
-                    <h2 class="fs-4">VEGAN</h2>
-                    <img src="media/img/PRODUCTS/VEGAN.png" class="img-fluid w-100" alt="VEGAN">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2 ROW -->
-            <div class="row-2 container text-center mb-5">
-              <div class="row align-items-start">
-                <!-- SORBETS -->
-                <div class="sorbets col-12 col-lg-4 p-0 pe-5">
-                  <div id="sorbets" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
-                    <h2 class="fs-4">SORBETS</h2>
-                    <img src="media/img/PRODUCTS/SORBETS.png" class="img-fluid w-100" alt="SORBETS">
-                  </div>
-                </div>
-
-                <!-- STICKBARS -->
-                <div class="stickbars col-12 col-lg-4 p-0 px-3">
-                  <div id="stickbars" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
-                    <h2 class="fs-4">STICKBARS</h2>
-                    <img src="media/img/PRODUCTS/STICKBARS.png" class="img-fluid w-100" alt="STICKBARS">
-                  </div>
-                </div>
-
-                <!-- CONES -->
-                <div class="cones col-12 col-lg-4 p-0 ps-5">
-                  <div id="cones" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-md-5 mb-0 ms-0">
-                    <h2 class="fs-4">CONES</h2>
-                    <img src="media/img/PRODUCTS/CONES.png" class="img-fluid w-100" alt="CONES">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 3 ROW -->
-            <div class="row-3 container text-center">
-              <div class="row align-items-start">
-                <!-- LIMITED -->
-                <div class="limited col-12 col-lg-4 p-0 pe-5">
-                  <div id="limited" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-0 ms-0">
-                    <h2 class="fs-4">LIMITED</h2>
-                    <img src="media/img/PRODUCTS/LIMITED.png" class="img-fluid w-100" alt="LIMITED">
-                  </div>
-                </div>
-
-                <!-- BITES -->
-                <div class="bites col-12 col-lg-4 p-0 px-3">
-                  <div id="bites" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-0 ms-0">
-                    <h2 class="fs-4">BITES</h2>
-                    <img src="media/img/PRODUCTS/BITES.png" class="img-fluid w-100" alt="BITES">
-                  </div>
-                </div>
-
-                <!-- COLLABORATIONS -->
-                <div class="collaborations col-12 col-lg-4 p-0 ps-5">
-                  <div id="collaborations" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-0 ms-0">
-                    <h2 class="fs-4">COLLABORATIONS</h2>
-                    <img src="media/img/PRODUCTS/COLLABORATIONS.png" class="img-fluid w-100" alt="COLLABORATIONS">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
+
       </section>
       
       <!-- NEWS -->
-      <section id="news">
-        <div class="news">
-          <h2 class="fs-2 mb-5 display-1 text-center"><b>NEWS</b></h2>
+        <section id="news">
+          <div class="news">
 
-          <div class="container-fluid text-center col-10">
+          <div>
+            
+            <h2 class="fs-2 mb-5 display-1 text-center"><b>NEWS</b></h2>
+  
+            <div class="container-fluid row justify-content-between">
 
-            <div class="container text-center mb-5">
-              <div class="row">
-                
-
-                <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
-                  <div class="card-img">
-                    <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
-                  </div>
-
-                  <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="card-title text-center display-4">Ice cream workshop</h1>
-                    <p class="card-text text-center fs-5">Last week end we had a workshop at Gran Plaza 2 in Madrid. Create your own flavor with us.</p>
-                    <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
-                  </div>
+              <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
+                <div class="card-img">
+                  <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
                 </div>
-
-
-                <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
-                  <div class="card-img">
-                    <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
-                  </div>
-    
-                  <div class="card-body d-flex flex-column justify-content-center align-items-center">
-    
-                    <h1 class="card-title text-center display-4">Peppermint Bark is back!!</h1>
-    
-                    <p class="card-text text-center fs-5">This flavor ir back for the holiday season! Only a limited units are available at grocery stores.</p>
-    
-                    <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
-    
-                  </div>
+  
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+  
+                  <h1 class="card-title text-center display-4">Ice cream workshop</h1>
+  
+                  <p class="card-text text-center fs-5">Last week end we had a workshop at Gran Plaza 2 in Madrid. Create your own flavor of ice cream with us.</p>
+  
+                  <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
+  
                 </div>
-
-
-                <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
-                  <div class="card-img">
-                    <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
-                  </div>
-    
-                  <div class="card-body d-flex flex-column justify-content-center align-items-center">
-    
-                    <h1 class="card-title text-center display-4">Cultured crème</h1>
-    
-                    <p class="card-text text-center fs-5">Your favorite flavors of ice cream can now be eaten as a yogurt. How is that possible? </p>
-    
-                    <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
-    
-                  </div>
-                </div>
-
               </div>
+              
+
+              <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
+                <div class="card-img">
+                  <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
+                </div>
+  
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+  
+                  <h1 class="card-title text-center display-4">Peppermint Bark is back!!</h1>
+  
+                  <p class="card-text text-center fs-5">This flavor ir back for the holiday season! Only a limited units are available at grocery stores.</p>
+  
+                  <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
+  
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-4 d-flex justify-content-center p-0 border-0">
+                <div class="card-img">
+                  <img src="media/img/NEWS_2.jpg" class="card-img-top" alt="NEWS">
+                </div>
+  
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+  
+                  <h1 class="card-title text-center display-4">Cultured crème, the new dairy snack</h1>
+  
+                  <p class="card-text text-center fs-5">Your favorite flavors of ice cream can now be eaten as a yogurt. How is that possible? </p>
+  
+                  <a href="#" class="btn btn-custom w-auto fs-5">READ MORE</a>
+  
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
-      </section>
+
+        </section>
 
       <!-- WAVY -->
 

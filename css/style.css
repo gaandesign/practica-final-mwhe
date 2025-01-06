@@ -141,6 +141,7 @@ h2 {
 /*____________________ */
 
 /* HEADER */
+<<<<<<< Updated upstream
 /* CAROUSEL IMAGES */
 #carousel_inicial {
     background-color: var(--color-burdeos);
@@ -154,14 +155,17 @@ h2 {
 .btn_explore {
     padding-bottom: 15rem;
 }
+=======
+>>>>>>> Stashed changes
 
+/*____________________ */
 /* MENU HAMBURGUESA */
 .navbar {
-    position: absolute;
-    z-index: 1;
+    z-index: 20;
     top: 5%;
     width: 90%;
     margin-left: 5%;
+<<<<<<< Updated upstream
     background-color: var(--color-burdeos) !important;
     border-radius: ;
     display: flex;
@@ -190,6 +194,11 @@ h2 {
     align-content: center !important;
     align-items: center;
     justify-content: space-between;
+=======
+    background-color: var(--color-burdeos);
+    border-radius: 6rem;
+    height: 6rem;
+>>>>>>> Stashed changes
 }
 
 .nav-item > a {
@@ -210,6 +219,22 @@ h2 {
     padding-right: 2rem !important;
     margin: 0;
     width: 100%;
+}
+
+/*____________________ */
+/* CAROUSEL IMAGES */
+
+#carousel_inicial {
+    background-color: var(--color-burdeos);
+}
+
+.carousel-item > img {
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+}
+
+.btn_explore {
+    padding-bottom: 15rem;
 }
 
 /* 
