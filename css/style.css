@@ -142,6 +142,7 @@ h2 {
 
 /* HEADER */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* CAROUSEL IMAGES */
 #carousel_inicial {
     background-color: var(--color-burdeos);
@@ -157,6 +158,8 @@ h2 {
 }
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 /*____________________ */
 /* MENU HAMBURGUESA */
@@ -165,6 +168,7 @@ h2 {
     top: 5%;
     width: 90%;
     margin-left: 5%;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     background-color: var(--color-burdeos) !important;
     border-radius: ;
@@ -194,6 +198,11 @@ h2 {
     align-content: center !important;
     align-items: center;
     justify-content: space-between;
+=======
+    background-color: var(--color-burdeos);
+    border-radius: 6rem;
+    height: 6rem;
+>>>>>>> Stashed changes
 =======
     background-color: var(--color-burdeos);
     border-radius: 6rem;
