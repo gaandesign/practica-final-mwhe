@@ -229,7 +229,7 @@ h2 {
 }
 
 .accordion > div {
-    background-color: var(--color-rosa_claro);
+    background-color: gainsboro;
 }
 
 .accordion > div > h2 > button {
@@ -237,14 +237,15 @@ h2 {
 }
 
 .accordion{
-    --bs-accordion-btn-bg:var(--color-rosa_medio);
-    --bs-accordion-active-bg:var(--color-rosa_medio);
+    --bs-accordion-btn-bg:var(--color-burdeos);
+    --bs-accordion-active-bg:var(--color-rosa_oscuro);
     --bs-accordion-active-color: var(--color-rosa_claro);
     --bs-accordion-btn-focus-boxs-shadow:none;
 }
 
 .accordion-body > p {
     font-size: 1.8rem;
+    color: var(--color-burdeos);
 }
 
 .accordion-button {
@@ -313,7 +314,7 @@ h2 {
 
 .dulcedeleche > div:last-child > div > div > div > a:last-child:hover, .saltedcaramel > div:last-child > div > div > div > a:last-child:hover {
     background-color: var(--color-burdeos);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .dulcedeleche > div:last-child > div > div {
@@ -459,7 +460,7 @@ h2 {
 }
 
 .newsphoto > a:hover {
-    background-color: var(--color-rosa_medio);
+    background-color: var(--color-rosa_claro);
 }
 
 
@@ -487,16 +488,8 @@ footer a:hover,.social-icons:hover {
     color: var(--color-rosa_claro); 
 }
 
-/* MEDIA QUERIES XL */
-@media screen and (max-width: 1600px) {
-    /* CARD */
-    .best_sellers > .container-fluid , .values > .container-fluid {
-        width: 100%;
-    }
 
-}
-
-/* MEDIA QUERIES L */
+/* MEDIA QUERIES */
 /* 1600 */
 @media screen and (max-width: 1600px) {
     .col-10 {
@@ -511,6 +504,11 @@ footer a:hover,.social-icons:hover {
     /* VALUES */
     .values > div > div > div > div > div:last-child > div > div > div > p {
         font-size: 2rem !important;
+    }
+
+    /* CARD */
+    .best_sellers > .container-fluid , .values > .container-fluid {
+        width: 100%;
     }
 
     /* PRODUCTS */
@@ -537,15 +535,15 @@ footer a:hover,.social-icons:hover {
     }
 
     .fs-4 {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
     }
 
     .fs-5, p, .container_bestsellers > div > div > div:last-child > div > div > div > p > a  {
         font-size: 2rem !important;
     }
     
-    .fs-4 {
-        font-size: 1.5rem !important;
+    #logo_menu {
+        width: 17em;
     }
 
     /* INTRODUCTION */
@@ -570,6 +568,23 @@ footer a:hover,.social-icons:hover {
     .products > div > div > div > div > div, .products > div > div > div > div > div > img {
         border-radius: 3rem !important;
     }
+
+    footer a, footer p {
+        font-size: 2rem;
+    }
+}
+
+/* 1200 */
+@media screen and (max-width: 1200px) {
+
+    .fs-4 {
+        font-size: 1.75rem !important;
+    }
+
+    #logo_menu {
+        width: 14em;
+    }
+
 }
 
 /* 1100 */
@@ -690,13 +705,45 @@ footer a:hover,.social-icons:hover {
     .container_bestsellers > div > div > div:last-child > div > div > img {
         transform: rotate(90deg);
         max-width: 50%; 
-        max-height: auto;
         object-fit: contain;
+    }
+
+    footer .figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer img {
+        width: 15em;
     }
 }
 
 /* 800 */
 @media screen and (max-width: 800px) {
+
+    .cookies_botones {
+        flex-direction: column !important;
+    }
+
+    #accept-cookies {
+        margin-bottom: 1em;
+    }
+
+    .navbar-toggler {
+        background-color: var(--color-naranja);
+        border-radius: 0;
+    }
+
+    .navbar {
+        background-color: var(--color-naranja);
+        border-radius: 2em;
+    }
+
+    #navbarNavDropdown {
+        background-color: var(--color-naranja);
+        border-radius: 0;
+    }
+
     /* INTRODUCTION */
     .intro-text {
         font-size: 11rem !important;
@@ -706,10 +753,37 @@ footer a:hover,.social-icons:hover {
     .values > div > div > div > div > div:last-child > div > div > div > p {
         font-size: 1.8rem !important;
     }
+
+    footer .container-fluid > div > div:first-child, .container-fluid > div > div:nth-child(2) {
+        display: none;
+    }
+
+    footer .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* NEWS */
+    .newsphoto > img {
+        height: 35vh;
+        width: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 3em;
+    }
+
+    .newsphoto > a {
+        margin-top: 1em !important;
+        font-size: 1.2rem !important;
+    }
 }
 
 /* 700 */
 @media screen and (max-width: 700px) {
+
+    
+
     .mb-5 {
         margin-bottom: 2rem !important;
     }
@@ -767,20 +841,7 @@ footer a:hover,.social-icons:hover {
         padding: 4% !important;
     }
 
-    /* NEWS */
-    .newsphoto > img {
-        height: 70vh;
-        width: auto;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-        border-radius: 3em;
-    }
-
-    .newsphoto > a {
-        margin-top: 1em !important;
-        font-size: 1.2rem !important;
-    }
+    
 }
 
 /* MEDIA QUERIES S */
