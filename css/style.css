@@ -135,14 +135,26 @@ h2 {
 
 
 /*____________________ */
-
 /* HEADER */
-
-/* CAROUSEL IMAGES */
 #carousel_inicial {
     background-color: var(--color-burdeos);
 }
 
+.btn_explore {
+    padding-bottom: 15rem;
+}
+
+#carousel_inicial {
+    background-color: var(--color-burdeos);
+}
+
+.carousel-item > img {
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; 
+}
 
 .btn_explore {
     padding-bottom: 15rem;
@@ -171,24 +183,7 @@ h2 {
 
 
 /*____________________ */
-/* CAROUSEL IMAGES */
-
-#carousel_inicial {
-    background-color: var(--color-burdeos);
-}
-
-.carousel-item > img {
-    border-bottom-left-radius: 6rem;
-    border-bottom-right-radius: 6rem;
-}
-
-.btn_explore {
-    padding-bottom: 15rem;
-}
-
-/*____________________ */
 /* INTRODUCTION */
-
 #introduccion, #introduccion > .container-fluid  {
     background-color: var(--color-burdeos);
 }
@@ -212,13 +207,18 @@ h2 {
 .about_us {
     background-color: var(--color-rosa_oscuro);
     padding: 5%;
-
+    display: flex;
+    justify-content: center;
 }
 
 .about_us h2 {
     color: var(--color-amarillo);
 }
 
+.video {
+    width: 100%;
+    justify-content: center;
+}
 
 .video > iframe {
     width: 95%;
@@ -236,7 +236,7 @@ h2 {
     padding: 2%;
 }
 
-.accordion {
+.accordion{
     --bs-accordion-btn-bg:var(--color-rosa_medio);
     --bs-accordion-active-bg:var(--color-rosa_medio);
     --bs-accordion-active-color: var(--color-rosa_claro);
@@ -280,7 +280,6 @@ h2 {
     border-radius: 4rem;
 }
 
-
 #dulcedeleche > a:hover, #saltedcaramel > a:hover, #belgianchocolate > a:hover {
     background-color: var(--color-rosa_medio);
     transition: 0.5s;
@@ -322,7 +321,7 @@ h2 {
 }
 
 .saltedcaramel > div:last-child > div > div {
-    background-color: #f7c85c;
+    background-color: #d8aa40;
 }
 
 .belgianchocolate > div:last-child > div > div {
@@ -404,7 +403,7 @@ h2 {
 }
 
 .products > h2 {
-    color: var(--color-amarillo);
+    color: var(--color-rosa_claro);
 }
 
 .row-1, .row-2, .row-3 {
@@ -432,51 +431,35 @@ h2 {
     background-color: var(--color-burdeos);
 }
 
-.news {
-    background-color: var(--color-rosa_medio);
-    border-radius: 100px 100px 0 0;
-}
-
-.news h2 {
+.news > h2 {
     color: var(--color-amarillo);
 }
 
-#news p {
-    color: var(--color-burdeos);
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-rosa_medio);
+    padding-bottom: 0;
 }
 
-#news h2 {
-    font-weight: 500;
+.newsphoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#news .card {
-    background-color: var(--color-naranja);
+.newsphoto > img {
     border-radius: 4rem;
-    width: 30%;
 }
 
-#news .card img {
-    border-radius: 4rem 4rem 0 0;
+.newsphoto > a {
+    background-color: var(--color-burdeos);
 }
 
-
-.news > div > div {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-
-.news > div > div > div > div:first-child {
-    margin-right: 2em;
-}
-
-.news > div > div > div > div:nth-child(2) {
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
-.news > div > div > div > div:last-child {
-    margin-left: 2em;
+.newsphoto > a:hover {
+    background-color: var(--color-rosa_medio);
 }
 
 
@@ -504,16 +487,7 @@ footer a:hover,.social-icons:hover {
     color: var(--color-rosa_claro); 
 }
 
-@media screen and (max-width: 1600px) {
-    /* CARD */
-    .best_sellers > .container-fluid , .values > .container-fluid {
-        width: 100%;
-    }
-
-}
-
 /* MEDIA QUERIES XL */
-
 @media screen and (max-width: 1600px) {
     /* CARD */
     .best_sellers > .container-fluid , .values > .container-fluid {
@@ -523,40 +497,358 @@ footer a:hover,.social-icons:hover {
 }
 
 /* MEDIA QUERIES L */
+/* 1600 */
+@media screen and (max-width: 1600px) {
+    .col-10 {
+        width: 100%;
+    }
+
+    /* INTRODUCTION */
+    .intro-text {
+        font-size: 15rem !important;
+    }
+
+    /* VALUES */
+    .values > div > div > div > div > div:last-child > div > div > div > p {
+        font-size: 2rem !important;
+    }
+
+    /* PRODUCTS */
+    .products > div > div {
+        margin-bottom: 4rem !important;
+    }
+
+    .products > div > div:last-child {
+        margin-bottom: 0 !important;
+    }
+}
 
 @media screen and (max-width: 1400px) {
-    
     .fs-1 {
-        font-size: 17rem !important;
+        font-size: 15rem !important;
     }
 
     .fs-2 {
-        font-size: 8rem !important;
+        font-size: 6rem !important;
     }
 
     .fs-3 {
-        font-size: 4rem !important;
+        font-size: 3rem !important;
     }
 
     .fs-4 {
         font-size: 2.5rem !important;
     }
 
-    .fs-5 {
+    .fs-5, p, .container_bestsellers > div > div > div:last-child > div > div > div > p > a  {
         font-size: 2rem !important;
     }
     
     .fs-4 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
 
+    /* INTRODUCTION */
+    .intro-text {
+        font-size: 12rem !important;
+    }
+
+    /* ABOUT US */
+    .video > iframe {
+        width: 90%;
+    }
+
+    .accordion-body > p {
+        font-size: 1.5rem !important;
+    }
+
+    .texto_about {
+        margin-top: 0;
+    }
+
+    /* PRODUCTS */
+    .products > div > div > div > div > div, .products > div > div > div > div > div > img {
+        border-radius: 3rem !important;
+    }
+}
+
+/* 1100 */
+@media screen and (max-width: 1100px) {
+    p, .container_bestsellers > div > div > div:last-child > div > div > div > p > a  {
+        font-size: 1.5rem !important;
+    }
+
+    /* HEADER */
+    .carousel-item > img {
+        border-bottom-left-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+    }
+
+    .about_us, .best_sellers, .values, .products, .news {
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+    }
+
+    /* INTRODUCTION */
+    .intro-text {
+        font-size: 15rem !important;
+    }
+
+    .container-fluid > div > div:last-child > img {
+        width: 70% !important;
+    }
+
+    /* ABOUT US */
+    .accordion-body > p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* BEST SELLERS */
+    #dulcedeleche > a, #saltedcaramel > a, #belgianchocolate > a {
+        font-size: 1.5rem !important;
+        margin-bottom: 2rem ! important;
+    }
+
+    .best_sellers > div > div > div > div > div > img {
+        padding: 2rem !important;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div {
+        padding-right: 2%;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div > h2 {
+        font-size: 4rem !important;
+    }
 }
 
 /* MEDIA QUERIES M */
+@media screen and (max-width: 900px) {
+    /* HEADER */
+    .btn_explore > a > button {
+        font-size: 1em !important;
+    }
+
+    /* ABOUT US */
+    .texto_about, .accordion {
+        padding: 0 !important;
+    }
+
+    .video > iframe {
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    /* BEST SELLERS, VALUES AND PRODUCTS */
+    .dulcedeleche, .saltedcaramel, .belgianchocolate, .quality, .sustainablity, .creativity, .products > div > div > div > div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        padding: 0 !important;
+    }
+
+    .products > div > div {
+        margin-bottom: 0 !important;
+    }
+
+    #dulcedeleche, #saltedcaramel, #quality, #sustainablity, .products > div > div > div > div > div {
+        width: 70%;
+        margin-bottom: 2rem;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .products > div > div > div > div > div {
+        margin-bottom: 3rem !important;
+    }
+
+    #belgianchocolate, #creativity {
+        width: 70%;
+    }
+
+    #quality > h2, #sustainablity > h2, #creativity > h2, .products > div > div > div > div > div > h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 5%;
+        padding-bottom: 0;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div {
+        padding-right: 0;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div > h2 {
+        font-size: 7rem !important;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > img {
+        transform: rotate(90deg);
+        max-width: 50%; 
+        max-height: auto;
+        object-fit: contain;
+    }
+}
+
+/* 800 */
+@media screen and (max-width: 800px) {
+    /* INTRODUCTION */
+    .intro-text {
+        font-size: 11rem !important;
+    }
+
+    /* VALUES */
+    .values > div > div > div > div > div:last-child > div > div > div > p {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* 700 */
+@media screen and (max-width: 700px) {
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .fs-2 {
+        font-size: 5rem !important;
+    }  
+    
+    p {
+        font-size: 1.3rem !important;
+    }
+
+    .carousel-item > img {
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+
+    .about_us, .best_sellers, .values, .products, .news {
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+
+    /* ABOUT US */
+    .accordion-body > p {
+        font-size: 1.2rem !important;
+    }
+
+    /* BEST SELLERS */
+    .container_bestsellers > div > div > div:last-child > div > div > div > h2 {
+        font-size: 5rem !important;
+    }
+
+    /* VALUES */
+    #quality > h2, #sustainablity > h2, #creativity > h2 {
+        font-size: 2rem !important;
+    }
+
+    .values > div > div > div > div > div:last-child > div > div > div {
+        padding: 0 !important;
+    }
+
+    .values > div > div > div > div > div:last-child > div > div > div > p {
+        font-size: 1.2rem !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* PRODUCTS */
+    .products > div > div > div > div > div {
+        margin-bottom: 0 !important;
+    }
+
+    .products > div > div > div > div > div > h2 {
+        font-size: 1.5rem !important;
+        padding: 4% !important;
+    }
+
+    /* NEWS */
+    .newsphoto > img {
+        height: 70vh;
+        width: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 3em;
+    }
+
+    .newsphoto > a {
+        margin-top: 1em !important;
+        font-size: 1.2rem !important;
+    }
+}
 
 /* MEDIA QUERIES S */
+@media screen and (max-width: 500px) {
+    .fs-2 {
+        font-size: 3rem !important;
+        padding-top: 1.5rem;
+    }
+
+    /* INTRODUCTION */
+    .intro-text {
+        font-size: 7rem !important;
+    }
+
+    /* BEST SELLERS */
+    .dulcedeleche, .saltedcaramel, .belgianchocolate {
+        margin-bottom: 1rem !important;
+    }
+
+    #dulcedeleche, #saltedcaramel, #belgianchocolate, .container_bestsellers > div > div > div:last-child > div > div, #quality, #sustainablity, #creativity, .products > div > div > div > div > div {
+        font-size: 2.5rem !important;
+        width: 100%;
+        border-radius: 3rem;
+    }
+
+    .best_sellers > div > div > div > div > div > img {
+        padding: 1.5rem !important;
+    }
+
+    #dulcedeleche > a, #saltedcaramel > a, #belgianchocolate > a {
+        font-size: 1.2rem !important;
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+
+    /* BEST SELLERS */
+    .container_bestsellers > div > div > div:last-child > div > div > div > h2 {
+        font-size: 4rem !important;
+    }
+
+    .products > div > div > div > div > div, .products > div > div > div > div > div > img {
+        border-radius: 2rem !important;
+    }
+
+    /* NEWS */
+    .newsphoto > a {
+        font-size: 0.8rem !important;
+    }
+}
 
 /* MEDIA QUERIES XS */
+@media screen and (max-width:400px) {
+    /* HEADER */
+    .btn_explore > a > button {
+        font-size: 0.7em !important;
+    }
+
+    /* ABOUT US */
+    .accordion-body > p {
+        font-size: 1.1rem !important;
+    }
+
+    /* VALUES */
+    #quality > h2, #sustainablity > h2, #creativity > h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
 
 
 
