@@ -55,51 +55,13 @@
             <div class="rechazar mx-4">
               <button type="button" id="reject-cookies" class="btn-primary py-3 px-5 fs-5 w-100">RECHAZAR</button>
             </div>
-
           </div>
       </div>    
     </div>
 
 
   <!-- HEADER -->
-  <header>
-
-    <nav class="navbar navbar-expand-md position-absolute d-flex align-items-center justify-content-center">
-      <div class="container-fluid">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-
-            <ul class="navbar-nav d-flex align-items-center align-content-center justify-content-between m-0">
-              
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-5" href="#about_us">ABOUT US</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-5" href="#best_sellers">BEST SELLERS</a>
-              </li>
-             
-              <li class="nav-item nav-logo">
-                <a class="nav-link d-none d-xl-flex justify-content-center" id="logo_menu" href="#"><img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs"></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-5" href="#products">PRODUCTS</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-5" href="#news">NEWS</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </nav>
-
+  <header class="header">
     <!-- CARRUSEL INICIAL -->
     <div id="carousel_inicial" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -117,12 +79,40 @@
 
     <!-- BOTÓN CARRUSEL -->
     <div class="btn_explore position-absolute start-50 translate-middle">
-      <a href="#introduccion">
-        <button type="button" class="btn-explore btn-primary fs-5">EXPLORE</button>
-      </a>
+      <button type="button" class="btn-explore btn-primary fs-5">
+        <a class="nav-link active" href="#introduccion">EXPLORE</a>
+      </button>
     </div>
-
   </header>
+
+  <nav class="navbar mi-color-fondo">
+    <div class="container-fluid menu px-5">
+      <button class="navbar-toggler mx-lg-4 mx-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa-solid fa-bars icon-custom fa-3x"></span> 
+      </button>
+
+      <a class="nav-link" id="logo_menu" href="#">
+        <img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs">
+      </a>
+          
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="fs-4 navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#about_us">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#best_sellers">BEST SELLERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#products">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#news">NEWS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
   <main>
       <!-- INTRODUCCIÓN -->
@@ -270,9 +260,9 @@
                       <div class="modal-content best-sellers-modal-content">
                         <div class="modal-text text-start">
                           <h2 class="fs-2 bestsellers-text" style="word-wrap: break-word;" id="dulcedelecheModalLabel">Dulce <br> de Leche</h2>
-                          <p>Escape the everyday on a road of smooth caramel and be transported to South America with a pint of our Caramel Spread Ice Cream.<br> Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. 
-                          <a href="https://www.haagen-dazs.es/en/quality-ingredients" style="text-decoration: underline;"><br> Learn more about our ingredients.</a>
-                          </p>
+                          <p>Escape the everyday on a road of smooth caramel and be transported to South America with a pint of our Caramel Spread Ice Cream.<br> Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing.</p>
+                          <a href="https://www.haagen-dazs.es/en/quality-ingredients" class="text-decoration-underline fs-4"><br>Learn more</a>
+
                         </div>
                         <img src="media/img/BESTSELLERS/DULCEDELECHE2.png" class="img-fluid" alt="Dulce de Leche">
                       </div>
@@ -297,12 +287,9 @@
                             <br>
                             Caramel 
                           </h2>
-                          <p>
-                            Devour the hills of caramel ice cream laced with rivers of salted caramel sauce and craters of crunchy caramel pieces. A whole world of extraordinary.
-                            <br>
-                            Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. 
-                            <a href="https://www.haagen-dazs.es/en/quality-ingredients" style="text-decoration: underline;"><br>Learn More About Our Ingredients.</a>
-                          </p>
+                          <p>Devour the hills of caramel ice cream laced with rivers of salted caramel sauce and craters of crunchy caramel pieces. A whole world of extraordinary.<br>Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. </p>
+                          <a href="https://www.haagen-dazs.es/en/quality-ingredients" class="text-decoration-underline fs-4"><br>Learn more</a>
+
                         </div>
                         <img src="media/img/BESTSELLERS/SALTEDCARAMEL2.png" class="img-fluid" alt="Salted Caramel">
                       </div>
@@ -328,12 +315,9 @@
                             <br>
                             Chocolate
                           </h2>
-                          <p>
-                            The ultimate in indulgence. We’ve blended our rich ice cream with Belgian chocolate and sprinkled it with chocolate fudge flecks. You’re welcome.
-                            <br>
-                            Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. 
-                            <a href="https://www.haagen-dazs.es/en/quality-ingredients" style="text-decoration: underline;"><br>Learn More About Our Ingredients.</a>
-                          </p>
+                          <p>The ultimate in indulgence. We’ve blended our rich ice cream with Belgian chocolate and sprinkled it with chocolate fudge flecks. You’re welcome.<br>Each scoop starts life as only four ingredients - cream, milk, sugar and eggs. To that, we only add amazing. </p>
+                          <a href="https://www.haagen-dazs.es/en/quality-ingredients" class="text-decoration-underline fs-4"><br>Learn more</a>
+
                         </div>
                         <img src="media/img/BESTSELLERS/BELGIAMCHOCOLATE2.png" class="img-fluid" alt="Belgian Chocolate">
                       </div>
@@ -518,9 +502,10 @@
         <div class="news">
           <h2 class="fs-2 mb-5 display-1 text-center"><b>NEWS</b></h2>
           <div class="newsphoto d-flex align-items-center mb-5 col-10">
-            <img src="media/img/NEWS.jpg" class="img-fluid w-100" alt="NEWS">
+            <img src="media/img/NEWS_CARGO.png" class="img-fluid w-100" alt="NEWS">
+            <p class="mb-0">DO NOT MISS OUR WEEKLY NEWS</p>
             <!-- LINK DE CARGO -->
-            <a href="" class="btn mt-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">DO NOT MISS OUR WEEKLY NEWS</a>
+            <a href="" class="btn mt-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">GO AHEAD</a>
           </div>
         </div>
       </section>
@@ -542,11 +527,11 @@
         <!-- LOGO -->
 
         <div class="container-fluid me-0">
-          <div class="d-flex row">
+          <div class="d-flex flex-row ">
             <div class="col-sm-2 col-lg-5"></div>
             <div class="col-sm-2 col-lg-5"></div>
   
-            <div class="col-sm-8 col-lg-2">
+            <div class="col-md-12 col-lg-2">
               <figure>
                 <img src="media/img/hagen-dazs-logo_menu.svg" alt="Logo Häagen-Dazs™">
                </figure>
@@ -555,8 +540,8 @@
          </div>
           
         <!-- CONTENIDO -->
-          <div class="row text-center me-0">
-              <div class="col-md-4">
+          <div class="flex-md-row flex-md-row text-center me-0">
+              <div class="col-md-12 col-lg-4">
                   <div class="footer_text fs-5">
                     <ul class="list-unstyled">
                       <li><a href="#about_us" class="text-decoration-none d-block m-2"><b>ABOUT US</b></a></li>
@@ -568,17 +553,17 @@
                   </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-12 col-lg-4">
                   <div class="footer_text fs-5 m-2">
                     <p>General Mills Ibérica, S.A.U.<br>Avenida de Burgos, 19, 4ªplanta, 28036, Madrid</p>
                   </div>  
               </div>
-              <div class="col-md-4">
+              <div class="col-md-12 col-lg-4">
                   <div class="social-icons fa-3x">
                       <ul class="d-flex justify-content-center list-unstyled gap-4 p-0">
-                          <li><a href="https://www.instagram.com/haagendazs_es/?hl=en d-block" class="text-decoration-none m-2"><i class="fa-brands fa-instagram p-1 fs-3"></i></a></li>
-                          <li><a href="https://www.facebook.com/haagendazstt/ d-block" class="text-decoration-none m-2"><i class="fa-brands fa-facebook p-1 fs-3"></i></a></li>
-                          <li><a href="https://www.youtube.com/user/HaagenDazsEs d-block" class="text-decoration-none m-2"><i class="fa-brands fa-youtube p-1 fs-3"></i></a></li>  
+                          <li><a href="https://www.instagram.com/haagendazs_es/?hl=en" class="d-block text-decoration-none m-2"><i class="fa-brands fa-instagram p-1 fs-3"></i></a></li>
+                          <li><a href="https://www.facebook.com/haagendazstt/" class="d-block text-decoration-none m-2"><i class="fa-brands fa-facebook p-1 fs-3"></i></a></li>
+                          <li><a href="https://www.youtube.com/user/HaagenDazsEs" class="d-block text-decoration-none m-2"><i class="fa-brands fa-youtube p-1 fs-3"></i></a></li>  
                       </ul>
                   </div>
               </div>
