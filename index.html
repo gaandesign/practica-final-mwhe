@@ -36,7 +36,6 @@
 
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 
 <body>
@@ -44,16 +43,16 @@
     <!-- POP-UP DE COOKIES -->
     <div id="cookie-popup">
       <div class="position-fixed p-5 d-flex flex-column align-items-center text-center">
-          <h2 class="fs-3 p-0"><b>AVISO DE COOKIES</b></h2>
-          <p class="fs-5">Estas cookies no se comen, pero quédate y ¡verás que los helados sí!</p>
+          <h2 class="fs-3 p-0"><b>COOKIES NOTICE</b></h2>
+          <p class="fs-5">These cookies aren't for eating, but stick around, and you'll see the ice cream is!</p>
           <div class="cookies_botones m-0 d-flex flex-row">
 
             <div class="aceptar mx-4">
-              <button type="button" id="accept-cookies" class="btn-primary py-3 px-5 fs-5 w-100">ACEPTAR</button>
+              <button type="button" id="accept-cookies" class="btn-primary py-3 px-5 fs-5 w-100">ACCEPT</button>
             </div>
             
             <div class="rechazar mx-4">
-              <button type="button" id="reject-cookies" class="btn-primary py-3 px-5 fs-5 w-100">RECHAZAR</button>
+              <button type="button" id="reject-cookies" class="btn-primary py-3 px-5 fs-5 w-100">DECLINE</button>
             </div>
           </div>
       </div>    
@@ -61,7 +60,7 @@
 
 
   <!-- HEADER -->
-  <header class="header">
+  <header>
     <!-- CARRUSEL INICIAL -->
     <div id="carousel_inicial" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -502,74 +501,80 @@
         <div class="news">
           <h2 class="fs-2 mb-5 display-1 text-center"><b>NEWS</b></h2>
           <div class="newsphoto d-flex align-items-center mb-5 col-10">
-            <img src="media/img/NEWS_CARGO.png" class="img-fluid w-100" alt="NEWS">
+            <img src="media/img/NEWS.jpg" class="img-fluid w-100" alt="NEWS">
             <p class="mb-0">DO NOT MISS OUR WEEKLY NEWS</p>
             <!-- LINK DE CARGO -->
-            <a href="" class="btn mt-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" data-bs-toggle="modal" data-bs-target="#dulcedelecheModal" role="button">GO AHEAD</a>
+            <a href="https://haagen-dazs.cargo.site/" class="btn mt-5 fs-5 btn btn-primary d-flex justify-content-center mt-0 mb-3 w-auto px-5" role="button">GO AHEAD</a>
           </div>
         </div>
       </section>
 
       <!-- WAVY -->
-
       <div id="wavy">
         <figure class="m-0">
           <img src="media/img/WAVY.png" alt="Decoracion Häagen-Dazs" class="w-100">
          </figure>
       </div>
-      
     </main>
 
-     <!-- FOOTER -->
-     <footer class="p-4">
+    <!-- FOOTER -->
+    <footer>
       <div class="footer-container">
-
         <!-- LOGO -->
-
         <div class="container-fluid me-0">
-          <div class="d-flex flex-row ">
-            <div class="col-sm-2 col-lg-5"></div>
-            <div class="col-sm-2 col-lg-5"></div>
-  
-            <div class="col-md-12 col-lg-2">
-              <figure>
-                <img src="media/img/hagen-dazs-logo_menu.svg" alt="Logo Häagen-Dazs™">
-               </figure>
+          <div class="footer_logo d-flex flex-row ">
+            <figure>
+              <img src="media/img/hagen-dazs-logo_menu.svg" alt="Logo Häagen-Dazs™">
+             </figure>
+          </div>
+        </div>
+
+        <div class="footer_information row text-center">
+          <div class="col-md-4">
+            <h3 class="fs-4">INFORMATION</h3>
+            <div class="footer_text fs-5">
+              <a href="#about_us">ABOUT US</a>
+              <a href="#best_sellers">BEST SELLERS</a>
+              <a href="#values">VALUES</a>
+              <a href="#products">PRODUCTS</a>
+              <a href="#news">NEWS</a>
             </div>
           </div>
-         </div>
-          
-        <!-- CONTENIDO -->
-          <div class="flex-md-row flex-md-row text-center me-0">
-              <div class="col-md-12 col-lg-4">
-                  <div class="footer_text fs-5">
-                    <ul class="list-unstyled">
-                      <li><a href="#about_us" class="text-decoration-none d-block m-2"><b>ABOUT US</b></a></li>
-                      <li><a href="#best_sellers" class="text-decoration-none d-block m-2"><b>BEST SELLERS</b></a></li>
-                      <li><a href="#values" class="text-decoration-none d-block m-2"><b>VALUES</b></a></li>
-                      <li><a href="#products" class="text-decoration-none d-block m-2"><b>PRODUCTS</b></a></li>
-                      <li><a href="#news" class="text-decoration-none d-block m-2"><b>NEWS</b></a></li>
-                    </ul>
-                  </div>
-              </div>
 
-              <div class="col-md-12 col-lg-4">
-                  <div class="footer_text fs-5 m-2">
-                    <p>General Mills Ibérica, S.A.U.<br>Avenida de Burgos, 19, 4ªplanta, 28036, Madrid</p>
-                  </div>  
-              </div>
-              <div class="col-md-12 col-lg-4">
-                  <div class="social-icons fa-3x">
-                      <ul class="d-flex justify-content-center list-unstyled gap-4 p-0">
-                          <li><a href="https://www.instagram.com/haagendazs_es/?hl=en" class="d-block text-decoration-none m-2"><i class="fa-brands fa-instagram p-1 fs-3"></i></a></li>
-                          <li><a href="https://www.facebook.com/haagendazstt/" class="d-block text-decoration-none m-2"><i class="fa-brands fa-facebook p-1 fs-3"></i></a></li>
-                          <li><a href="https://www.youtube.com/user/HaagenDazsEs" class="d-block text-decoration-none m-2"><i class="fa-brands fa-youtube p-1 fs-3"></i></a></li>  
-                      </ul>
-                  </div>
-              </div>
+          <div class="col-md-4">
+            <h3 class="fs-4">CONTACT</h3>
+            <div class="footer_contact fs-5">
+              <p>General Mills Ibérica, S.A.U.</p>
+              <p>Avda de Burgos, 19, 4ªplanta</p> 
+              <p>28036 MADRID</p>  
+            </div>  
           </div>
+
+          <div class="col-md-4">
+            <h3 class="fs-4">SOCIAL MEDIA</h3>
+            <div class="footer_social social-icons fa-3x ">
+              <ul class="d-flex">
+                <li>
+                  <a href="https://www.instagram.com/haagendazs_es/?hl=en">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/haagendazstt/">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/HaagenDazsEs">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>  
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-     </footer>
+    </footer>
 
     <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-XopO4E0qeKeK0xZRroHAlXJxED82InYcs5QJvArZ+lC3oU6zZBpi3MxE0Q95t9f3" crossorigin="anonymous"></script>

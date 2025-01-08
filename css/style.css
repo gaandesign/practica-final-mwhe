@@ -206,7 +206,7 @@ h2 {
     height: 10vh;
 }
 
-.header > div:nth-child(2) > button {
+header > div:nth-child(2) > button {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -268,7 +268,7 @@ h2 {
 
 .accordion{
     --bs-accordion-btn-bg:var(--color-burdeos);
-    --bs-accordion-active-bg:var(--color-rosa_oscuro);
+    --bs-accordion-active-bg:var(--color-rosa_medio);
     --bs-accordion-active-color: var(--color-rosa_claro);
     --bs-accordion-btn-focus-boxs-shadow:none;
 }
@@ -504,7 +504,6 @@ h2 {
 
 /* ____________ */
 /* FOOTER */
-
 footer {
     background-color: var(--color-burdeos);  
 }
@@ -513,9 +512,47 @@ footer, footer a {
     color: white;
 }
 
+footer > div {
+    padding-bottom: 1rem;
+}
 
 footer a:hover,.social-icons:hover {
     color: var(--color-rosa_claro); 
+}
+
+.footer_logo {
+    justify-content: center;
+}
+
+.footer_logo > figure > img {
+    height: 15vh;
+    margin-bottom: 2rem;
+}
+
+.footer_information {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.footer_information > div, .footer_information > div:last-child > div > ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.footer_information > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_information > div > div > a, .footer_contact > p {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.footer_social > ul {
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
@@ -619,7 +656,7 @@ footer a:hover,.social-icons:hover {
 
 /* 1100 */
 @media screen and (max-width: 1100px) {
-    p, .container_bestsellers > div > div > div:last-child > div > div > div > p > a  {
+    p, .container_bestsellers > div > div > div:last-child > div > div > div > p > a, .footer_information > div:first-child > div > a {
         font-size: 1.5rem !important;
     }
 
@@ -704,6 +741,14 @@ footer a:hover,.social-icons:hover {
         padding-left: 0 !important;
     }
 
+    .container_bestsellers > div > div > div:last-child > div > div > img {
+        display: none;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div {
+        padding-bottom: 5%;
+    }
+
     .products > div > div > div > div > div {
         margin-bottom: 3rem !important;
     }
@@ -738,6 +783,7 @@ footer a:hover,.social-icons:hover {
         object-fit: contain;
     }
 
+    /* FOOTER */
     footer .figure {
         display: flex;
         justify-content: center;
@@ -750,6 +796,12 @@ footer a:hover,.social-icons:hover {
     /* MENU HAMBURGUESA */
     .navbar > div > a > img {
         height: 8vh !important;
+    }
+
+    /* FOOTER */
+    .footer_information > div:first-child > div > a, .footer_contact > p, .footer_social > ul > li > a {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
@@ -796,13 +848,20 @@ footer a:hover,.social-icons:hover {
         margin-top: 1em !important;
         font-size: 1.2rem !important;
     }
+
+    /* FOOTER */
+    .footer_information {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer_information > div {
+        margin-bottom: 2rem !important;
+    }
 }
 
 /* 700 */
 @media screen and (max-width: 700px) {
-
-    
-
     .mb-5 {
         margin-bottom: 2rem !important;
     }
@@ -811,7 +870,7 @@ footer a:hover,.social-icons:hover {
         font-size: 5rem !important;
     }  
     
-    p {
+    p, .footer_information > div:first-child > div > a {
         font-size: 1.3rem !important;
     }
 
@@ -888,6 +947,13 @@ footer a:hover,.social-icons:hover {
         padding-top: 1.5rem;
     }
 
+    /* HEADER */
+    .btn_explore > button > a {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        font-size: 1.3rem;
+    }
+
     /* INTRODUCTION */
     .intro-text {
         font-size: 7rem !important;
@@ -924,8 +990,13 @@ footer a:hover,.social-icons:hover {
     }
 
     /* NEWS */
-    .newsphoto > a {
-        font-size: 0.8rem !important;
+    .newsphoto > img {
+        height: 70vh;
+        width: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 3em;
     }
 }
 
