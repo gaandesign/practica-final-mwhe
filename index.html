@@ -55,51 +55,13 @@
             <div class="rechazar mx-4">
               <button type="button" id="reject-cookies" class="btn-primary py-3 px-5 fs-5 w-100">RECHAZAR</button>
             </div>
-
           </div>
       </div>    
     </div>
 
 
   <!-- HEADER -->
-  <header>
-
-    <nav class="navbar navbar-expand-md position-absolute d-flex align-items-center justify-content-center">
-      <div class="container-fluid">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-
-            <ul class="navbar-nav d-flex align-items-center align-content-center justify-content-between m-0">
-              
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-4" href="#about_us">ABOUT US</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-4" href="#best_sellers">BEST SELLERS</a>
-              </li>
-             
-              <li class="nav-item nav-logo">
-                <a class="nav-link d-none d-xl-flex justify-content-center" id="logo_menu" href="#"><img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs"></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-4" href="#products">PRODUCTS</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fs-4 m-0 w-100 px-lg-2 px-xl-4" href="#news">NEWS</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </nav>
-
+  <header class="header">
     <!-- CARRUSEL INICIAL -->
     <div id="carousel_inicial" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -117,12 +79,40 @@
 
     <!-- BOTÓN CARRUSEL -->
     <div class="btn_explore position-absolute start-50 translate-middle">
-      
-      <button type="button" class="btn-explore btn-primary fs-5"><a href="#introduccion"></a>EXPLORE</a></button>
-      
+      <button type="button" class="btn-explore btn-primary fs-5">
+        <a class="nav-link active" href="#introduccion">EXPLORE</a>
+      </button>
     </div>
-
   </header>
+
+  <nav class="navbar mi-color-fondo">
+    <div class="container-fluid menu px-5">
+      <button class="navbar-toggler mx-lg-4 mx-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa-solid fa-bars icon-custom fa-3x"></span> 
+      </button>
+
+      <a class="nav-link" id="logo_menu" href="#">
+        <img src="media/img/hagen-dazs-logo_menu.svg" alt="Häagen-Dazs">
+      </a>
+          
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="fs-4 navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#about_us">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#best_sellers">BEST SELLERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#products">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#news">NEWS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
   <main>
       <!-- INTRODUCCIÓN -->
