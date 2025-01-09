@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
     
   <!-- TÍTULO DE LA WEB -->
-  <title>Luxury Icen Cream | Häagen-Dazs ES</title>
+  <title>Luxury Ice Cream | Häagen-Dazs ENG</title>
 
   <!-- DESCRIPCIÓN DE LA WEB -->
   <meta name="description" content="Häagen-Dazs España">
@@ -25,8 +25,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- LOCOMOTIVE SCROLL CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+  <!-- GSAP ANIMATION -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+   <!-- AOS CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
      
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -81,9 +84,7 @@
 
     <!-- BOTÓN CARRUSEL -->
     <div class="btn_explore position-absolute start-50 translate-middle">
-      <button type="button" class="btn-explore btn-primary fs-5">
-        <a class="nav-link active" href="#introduccion">EXPLORE</a>
-      </button>
+      <a class="btn-explore btn-primary fs-5 nav-link active" href="#introduccion">EXPLORE</a>
     </div>
   </header>
 
@@ -124,7 +125,9 @@
 
             <!-- TEXTO -->
             <div class="col-xl-6 col-lg-12 d-flex flex-column justify-content-center">
-              <h2 class="fs-1 intro-text text-wrap" data-scroll data-scroll-speed="2">Thät’s<br>Dazs</h2>
+              <h2 class="fs-1 intro-text text-wrap">
+                Th<span id="letter-a">ä</span>t’s<br>Dazs
+              </h2>
             </div>
             
             <!-- IMAGEN -->
@@ -144,15 +147,15 @@
             <h2 class="fs-2 mb-5 display-1 text-center"><b>ABOUT US</b></h2>
 
             <!-- TEXTO -->
-            <p class="texto_about mb-5 px-5">Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
+            <p data-aos="fade-right" class="texto_about mb-5 px-5">Häagen-Dazs™ have been making ice cream like no other since 1960. Our founder, Reuben Mattus’ vision was to make the most extraordinary ice cream the world has ever tasted, a spoonful of luxury to escape the everyday. And to get there he only used the highest quality, carefully selected ingredients. As Reuben said, ‘If you’re like everyone else, you’re lost’. So we make an ice cream like no other – the best that best can be.</p>
 
             <!-- VIDEO -->
-            <div class="video d-flex align-items-center mb-5">
+            <div data-aos="fade-left" class="video d-flex align-items-center mb-5">
               <iframe src="https://www.youtube.com/embed/VH_qr8lB92w?si=ikQ95rTW4ovgdlp9&autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <!-- ACCORDION -->
-            <div class="accordion col-10 px-5" id="accordionExample" style="width: 100%; margin: 0 auto;">
+            <div data-aos="fade-up" class="accordion col-10 px-5" id="accordionExample" style="width: 100%; margin: 0 auto;">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="fs-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -340,24 +343,27 @@
             <div class="container_bestsellers text-center">
               <div class="row align-items-start">
                 <!-- QUALITY -->
-                <div class="quality col-12 col-lg-4 p-0 pe-5">
-                  <div id="quality" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-0 ms-0">
-                    <img src="media/img/VALUES/VALUES-01.png" class="img-fluid w-100" alt="quality" data-bs-toggle="modal" data-bs-target="#qualityModal">
+                <div class="quality col-12 col-lg-4 p-0">
+                  <div id="quality" class="position-relative overflow-hidden d-flex flex-column align-items-center text-center position-relative mb-0 px-3">
+                    <img src="media/img/VALUES/VALUES-03.png" class="img-fluid w-100" alt="quality" data-bs-toggle="modal" data-bs-target="#qualityModal">
                     <h2 class="position-absolute top-50 start-50 translate-middle fs-4 m-0">QUALITY</h2>
                   </div>
                 
                   <!-- MODAL -->
-                  <div class="modal fade" id="qualityModal" tabindex="-1" aria-labelledby="qualityModalLabel" >
+                  <div class="modal fade" id="qualityModal" tabindex="-1" aria-label="Quality Modal">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content values-modal-content">
                         <div class="modal-body">
-                          <p>Quality is not just a word—it’s the heart of everything we do. From the moment we source our ingredients to the final scoop in your bowl, we uphold the highest standards to ensure every bite is a moment of indulgence. We use only the finest, all-natural ingredients, including pure cream, fresh milk, and carefully selected flavors like Madagascar vanilla and Belgian chocolate. Each step in our production process is meticulously controlled to preserve the richness, texture, and taste that have defined our brand for decades. When you choose Häagen-Dazs, you’re choosing a product crafted with care and dedication, because we believe that exceptional quality is the foundation of extraordinary taste.
+                          <p>
+                            Quality is not just a word—it’s the heart of everything we do. From the moment we source our ingredients to the final scoop in your bowl, we uphold the highest standards to ensure every bite is a moment of indulgence. We use only the finest, all-natural ingredients, including pure cream, fresh milk, and carefully selected flavors like Madagascar vanilla and Belgian chocolate. Each step in our production process is meticulously controlled to preserve the richness, texture, and taste that have defined our brand for decades. When you choose Häagen-Dazs, you’re choosing a product crafted with care and dedication, because we believe that exceptional quality is the foundation of extraordinary taste.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                
+                
 
                 <!-- SUSTAINABILITY -->
                 <div class="sustainablity col-12 col-lg-4 p-0">
@@ -367,7 +373,7 @@
                   </div>
                 
                   <!-- MODAL -->
-                  <div class="modal fade" id="sustainablityModal" tabindex="-1" aria-labelledby="sustainablityModalLabel">
+                  <div class="modal fade" id="sustainablityModal" tabindex="-1" aria-label="Sustainability Modal">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content values-modal-content">
                         <div class="modal-body">
@@ -386,7 +392,7 @@
                   </div>
                 
                   <!-- MODAL -->
-                  <div class="modal fade" id="creativityModal" tabindex="-1" aria-labelledby="creativityModalLabel">
+                  <div class="modal fade" id="creativityModal" tabindex="-1" aria-label="Creativity Modal">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content values-modal-content">
                         <div class="modal-body">
@@ -579,13 +585,18 @@
     </footer>
 
     <!-- JS BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-XopO4E0qeKeK0xZRroHAlXJxED82InYcs5QJvArZ+lC3oU6zZBpi3MxE0Q95t9f3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS LOCOMOTIVE SCROLL -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    <!-- GSAP ANIMATION -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-
+     <!-- AOS JSS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init();
+     </script>
+     
     <!-- JS PROPIO -->
     <script src="js/script.js"></script>
 </body>

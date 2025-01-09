@@ -16,11 +16,16 @@ $(document).ready(function () {
 });
 
 
-// LOCOMOTIVE SCROLL 
-document.addEventListener("DOMContentLoaded", function () {
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector("#introduccion[data-scroll-container]"), 
-        smooth: true, 
-        multiplier: 1.5, 
-    });
-});
+// GSAP ANIMATION
+gsap.fromTo("#letter-a", 
+    {
+      rotationY: -180, 
+    }, 
+    {
+      duration: 2, 
+      rotationY: 0, 
+      ease: "power2.inOut",
+      repeat: -1, 
+      yoyo: true, 
+    }
+  );

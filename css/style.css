@@ -16,8 +16,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Roboto", serif;
-    /* PARA VER MARGENES DE LA WEB USAR EL BORDER ESTE(BORRAR AL TERMINAR) */
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
 }
 
 .best_sellers, .values, .news, .products, .about_us { 
@@ -226,16 +225,10 @@ header > div:nth-child(2) > button {
     color: var(--color-rosa_claro);
 }
 
-/* LOCOMOTIVE SCROLL */
-/* html, body {
-    height: 100%;
-    overflow: hidden;
-} */
-/* 
-[data-scroll-container] {
-    height: 100%;
-    overflow: hidden;
-} */
+#letter-a {
+    display: inline-block;
+    transform-style: preserve-3d; 
+}
 
 
 /* ____________ */
