@@ -226,6 +226,17 @@ header > div:nth-child(2) > button {
     color: var(--color-rosa_claro);
 }
 
+/* LOCOMOTIVE SCROLL */
+/* html, body {
+    height: 100%;
+    overflow: hidden;
+} */
+/* 
+[data-scroll-container] {
+    height: 100%;
+    overflow: hidden;
+} */
+
 
 /* ____________ */
 /* ABOUT US  */
@@ -707,6 +718,21 @@ footer a:hover,.social-icons:hover {
 
 /* MEDIA QUERIES M */
 @media screen and (max-width: 900px) {
+    /* COOKIES */
+    #cookie-popup > div > h2 {
+        font-size: 2.5rem !important;
+    }
+
+    #cookie-popup > div > p {
+        font-size: 1.5rem !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .cookies_botones > div > button {
+        font-size: 1.3rem !important;
+    }
+    
     /* HEADER */
     .btn_explore > a > button {
         font-size: 1em !important;
@@ -947,6 +973,12 @@ footer a:hover,.social-icons:hover {
         padding-top: 1.5rem;
     }
 
+    /* COOKIES */
+    #cookie-popup > div {
+        width: 80%;
+        padding: 5% !important;
+    }
+
     /* HEADER */
     .btn_explore > button > a {
         margin-top: 1rem !important;
@@ -983,6 +1015,15 @@ footer a:hover,.social-icons:hover {
     /* BEST SELLERS */
     .container_bestsellers > div > div > div:last-child > div > div > div > h2 {
         font-size: 4rem !important;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div > p {
+        margin-bottom: 0 !important;
+    }
+
+    .container_bestsellers > div > div > div:last-child > div > div > div > a {
+        margin-top: 0 !important;
+        font-size: 1.5rem !important;
     }
 
     .products > div > div > div > div > div, .products > div > div > div > div > div > img {

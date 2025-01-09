@@ -1,19 +1,26 @@
 // console.log("online");
 
-$(document).ready(function(){
-    // POP UP
-    // Muestra el pop-up de cookies después de 2 segundos
-    setTimeout(function(){
-      $("#cookie-popup").fadeIn();
+// JQUERY 
+$(document).ready(function () {
+    setTimeout(function () {
+        $("#cookie-popup").fadeIn();
     }, 2000);
 
-    // Maneja el clic en el botón de aceptar cookies
-    $("#accept-cookies").click(function(){
+    $("#accept-cookies").click(function () {
         $("#cookie-popup").fadeOut();
-    });   
+    });
 
-    // Maneja el clic en el botón de rechazar cookies
-    $("#reject-cookies").click(function() {
+    $("#reject-cookies").click(function () {
         $("#cookie-popup").fadeOut();
+    });
+});
+
+
+// LOCOMOTIVE SCROLL 
+document.addEventListener("DOMContentLoaded", function () {
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector("#introduccion[data-scroll-container]"), 
+        smooth: true, 
+        multiplier: 1.5, 
     });
 });
